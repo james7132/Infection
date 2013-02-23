@@ -43,7 +43,8 @@ public class MatthewTestVirusScript : MonoBehaviour {
 		if(cam!=null){
 			
 			if(Input.GetMouseButton(0)){
-				goalPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,-82));
+				goalPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y, 0));
+				goalPosition.z = 0;
 				if(_clickHoldLockCheck == false) {
 					_clickHoldLockCheck = true;
 					clickSound.Play ();

@@ -17,6 +17,15 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	public float yMin = -350;
 	
 	GameObject[] whiteBloodCells;
+				
+	private AudioSource boomSound;
+	
+	void Start() {
+		boomSound = (AudioSource)gameObject.AddComponent("AudioSource");
+        boomSound.clip = (AudioClip)Resources.Load("damage");
+		boomSound.volume = 0.5f;
+		boomSound.rolloffMode = AudioRolloffMode.Custom;
+	}
 	
 	void OnTriggerStay(Collider other) {
 		if(other.gameObject.tag == "Enemy")
@@ -99,7 +108,7 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	public void Fire(Vector3 point, float speedOfProjectile){
 		
 		if(fireTimer<=0){
-			
+			boomSound.Play();
 			//Instantiate the projectile
 			GameObject projectileObj = Instantiate(projectile,transform.position,transform.rotation) as GameObject;
 			WhiteBloodCellProjectile cellProj = projectileObj.GetComponent<WhiteBloodCellProjectile>();

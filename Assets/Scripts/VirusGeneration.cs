@@ -8,12 +8,20 @@ namespace AssemblyCSharp
 		public GameObject prefab;
 		public static GameObject virus;
 		
+		private AudioSource startSound;
+
 		// Use this for initialization
 		void Start () 
 		{
 			virus = prefab;
 			spawnVirus(0f, 0f);
 			selectNewVirus();
+
+			startSound = (AudioSource)gameObject.AddComponent("AudioSource");
+	        startSound.clip = (AudioClip)Resources.Load("gameover-abstract");
+			startSound.volume = 0.5f;
+			startSound.rolloffMode = AudioRolloffMode.Custom;
+			startSound.Play();
 		}
 		
 		public static void spawnVirus(float x, float y)

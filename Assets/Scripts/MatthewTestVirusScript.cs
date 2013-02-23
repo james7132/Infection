@@ -8,11 +8,32 @@ public class MatthewTestVirusScript : MonoBehaviour {
 	private ArrayList viruses;
 	public bool makeBabies=true;
 	
+	private AudioSource deathSound;
+	private AudioSource juicySound;
+	private AudioSource clickSound;
+
+	public GameObject explosionFab;
 	
 	void Start(){
 		goalPosition=transform.position;
 		viruses = new ArrayList();
+		
+		deathSound = (AudioSource)gameObject.AddComponent("AudioSource");
+        deathSound.clip = (AudioClip)Resources.Load("cells-splatter");
+		deathSound.volume = 0.5f;
+		deathSound.rolloffMode = AudioRolloffMode.Custom;
+		
+		juicySound = (AudioSource)gameObject.AddComponent("AudioSource");
+        juicySound.clip = (AudioClip)Resources.Load("gameover-bodyfailure");
+		juicySound.volume = 0.45f;
+		juicySound.rolloffMode = AudioRolloffMode.Custom;
+		
+		clickSound = (AudioSource)gameObject.AddComponent("AudioSource");
+        clickSound.clip = (AudioClip)Resources.Load("selection");
+		clickSound.volume = 0.35f;
+		clickSound.rolloffMode = AudioRolloffMode.Custom;
 	}
+	private bool _clickHoldLockCheck = false;
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,10 +41,16 @@ public class MatthewTestVirusScript : MonoBehaviour {
 		MoveAway();
 		
 		if(cam!=null){
+			
 			if(Input.GetMouseButton(0)){
 				goalPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,-82));
+				if(_clickHoldLockCheck == false) {
+					_clickHoldLockCheck = true;
+					clickSound.Play ();
+				}
+			} else {
+				_clickHoldLockCheck = false;
 			}
-			
 			
 			Vector3 difference = goalPosition-transform.position;
 			
@@ -59,9 +86,17 @@ public class MatthewTestVirusScript : MonoBehaviour {
 				//Debug.Log("I hit a: "+other.name);
 				Object newVirus = Instantiate(gameObject,other.transform.position,transform.rotation);
 				newVirus.name ="Bob";
+				juicySound.Play();
+				if(explosionFab) {
+					Instantiate(explosionFab, transform.position, transform.rotation);
+				}
 				Destroy(other.gameObject);
 			}
 			if(other.tag=="Enemy"){
+				deathSound.Play();
+				if(explosionFab) {
+					Instantiate(explosionFab, transform.position, transform.rotation);
+				}
 				Destroy(other.gameObject);
 			}
 		}

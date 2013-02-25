@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 //Purely for testing
+//GITHUB TEST
 public class WhiteBloodCellSpawner : MonoBehaviour {
 	public GameObject whiteBloodCell;
 	public float spawnTimer;

@@ -16,8 +16,8 @@ namespace AssemblyCSharp
 			bloodCell = prefab;
 			for(int i = 0; i < initialSpawnNumber; i++)
 			{
-				spawnNormalCell(Random.value * (Global.leftLimit - Global.rightLimit) - Global.leftLimit,
-					Random.value * (Global.upperLimit - Global.deathLimit) - Global.upperLimit);
+				spawnNormalCell(Random.value * (Global.LeftLimit - Global.RightLimit) - Global.LeftLimit,
+					Random.value * (Global.UpperLimit - Global.DeathLimit) - Global.UpperLimit);
 			}
 		}
 		
@@ -26,13 +26,13 @@ namespace AssemblyCSharp
 		{
 			if(Random.value > spawnThreshold)
 			{
-				spawnNormalCell(Random.value * (Global.leftLimit - Global.rightLimit) - Global.leftLimit);
+				spawnNormalCell(Random.value * (Global.LeftLimit - Global.RightLimit) - Global.LeftLimit);
 			}
 		}
 		
 		public static void spawnNormalCell(float x)
 		{
-			spawnNormalCell(x, Global.upperLimit + 50);
+			spawnNormalCell(x, Global.UpperLimit + 50);
 		}
 		
 		private static void spawnNormalCell(float x, float y)

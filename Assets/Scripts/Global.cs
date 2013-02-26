@@ -6,30 +6,44 @@ namespace AssemblyCSharp
 	public class Global	 : MonoBehaviour 
 	{
 		public static GameState GameState = GameState.IN_GAME;
-		public static GameObject PlayerVirus;
-		//Adding this here to avoid null pointer
-		public static GameObject[] Viruses= new GameObject[0];
-		public static GameObject[] NormalRedBloodCells;
-		public static GameObject[] InfectedBloodCells;
-		public const int upperLimit = 360;
-		public const int deathLimit = -400;
-		public const int leftLimit = 475;
-		public const int rightLimit = -475;
+		public double playerScore;
+		public double virusCountToScoreRatio;
+		public int Upper_Limit = 360;
+		public int Death_Limit = -400;
+		public int Left_Limit = 475;
+		public int Right_Limit = -475;
+		public static int UpperLimit;
+		public static int DeathLimit;
+		public static int LeftLimit;
+		public static int RightLimit;
+		
+		public Global()
+		{
+			UpperLimit = Upper_Limit;
+			DeathLimit = Death_Limit;
+			LeftLimit = Left_Limit;
+			RightLimit = Right_Limit;
+		}
 		
 		void Start()
 		{
+			playerScore = 0;
 		}
 		
 		void Update()
 		{
-			PlayerVirus = GameObject.FindGameObjectWithTag("Player");
-			Viruses = GameObject.FindGameObjectsWithTag("Virus");
-			NormalRedBloodCells = GameObject.FindGameObjectsWithTag("Red Blood Cell");
-			InfectedBloodCells = GameObject.FindGameObjectsWithTag("Infected Blood Cell");
-			if(Viruses.Length <= 0 && InfectedBloodCells.Length <= 0)
+			GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
+			GameObject[] infectedBloodCells = GameObject.FindGameObjectsWithTag("Infected Blood Cell");
+			playerScore += Time.deltaTime * virusCountToScoreRatio * (Math.Log(Math.Pow(viruses.Length, 3)) + 1);
+			if(viruses.Length <= 0 && infectedBloodCells.Length <= 0)
 			{
 				GameState = GameState.GAME_OVER;
 			}
+		}
+		
+		void OnGUI()
+		{
+			GUI.Label(new Rect(0, 0, Screen.width, Screen.height), ((int)(playerScore)).ToString());
 		}
 	}
 	

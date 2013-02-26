@@ -70,7 +70,7 @@ namespace AssemblyCSharp
 			lookDir.z = 0f;
 			//gameObject.transform.localRotation = Quaternion.LookRotation(lookDir);
 			
-			if(gameObject.transform.localPosition.y < Global.deathLimit)
+			if(gameObject.transform.localPosition.y < Global.DeathLimit)
 			{
 				Destroy (gameObject);
 			}

@@ -74,7 +74,7 @@ namespace AssemblyCSharp
 			}
 			*/
 			gameObject.transform.localPosition -= new Vector3(0f, fallSpeed, 0f);
-			if(gameObject.transform.localPosition.y < Global.deathLimit)
+			if(gameObject.transform.localPosition.y < Global.DeathLimit)
 			{
 				Destroy (gameObject);
 			}

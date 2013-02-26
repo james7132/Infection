@@ -15,7 +15,6 @@ namespace AssemblyCSharp
 		{
 			virus = prefab;
 			spawnVirus(0f, 0f);
-			selectNewVirus();
 
 			startSound = (AudioSource)gameObject.AddComponent("AudioSource");
 	        startSound.clip = (AudioClip)Resources.Load("gameover-abstract");
@@ -27,14 +26,6 @@ namespace AssemblyCSharp
 		public static void spawnVirus(float x, float y)
 		{
 			Instantiate(virus, new Vector3(x, y, 5f), Quaternion.Euler(90f, 0f, 0f));
-		}
-		
-		public static void selectNewVirus()
-		{
-			if(Global.Viruses.Length != 0)
-			{
-				Global.Viruses[0].tag = "Player";
-			}
 		}
 		
 		// Update is called once per frame

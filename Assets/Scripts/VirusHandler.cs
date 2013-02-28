@@ -5,34 +5,22 @@ namespace AssemblyCSharp
 {
 	public class VirusHandler : MonoBehaviour 
 	{	
-		public GameObject prefab;
 		public GUIStyle selectionStyle;
 		
 		private static GameObject virus;
-		private static List<GameObject> selectedViruses;
 		private Rect selectionRect;
 		private Vector2 startLoc;
 		private bool selecting;
 		
+		public Camera cam;
 		// Use this for initialization
 		void Start () 
 		{
-			virus = prefab;
 			selectionRect = new Rect(-5, -5, 0, 0);
-			selectedViruses =  new List<GameObject>();
-			selecting = false;
-			spawnVirus(0f, 0f);
+			
 		}
 		
-		public static GameObject spawnVirus(Vector3 spawn)
-		{
-			return spawnVirus(spawn.x, spawn.y);
-		}
 		
-		public static GameObject spawnVirus(float x, float y)
-		{
-			return (GameObject) Instantiate(virus, new Vector3(x, y, 5f), Quaternion.Euler(90f, 0f, 0f));
-		}
 		
 		public static void selectSingleVirus(GameObject virus)
 		{
@@ -42,8 +30,8 @@ namespace AssemblyCSharp
 			}
 			else
 			{
-				selectedViruses.Clear();
-				selectedViruses.Add(virus);
+				//selectedViruses.Clear();
+				//selectedViruses.Add(virus);
 				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
 				foreach(GameObject virusCheck in viruses)
 				{
@@ -63,7 +51,7 @@ namespace AssemblyCSharp
 				selectionRect.yMin = startLoc.y;
 				selectionRect.xMax = startLoc.x; 
 				selectionRect.yMax = startLoc.y;
-				selectedViruses.Clear();
+				//selectedViruses.Clear();
 				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
 				foreach(GameObject v in viruses)
 				{
@@ -99,16 +87,19 @@ namespace AssemblyCSharp
 			else if(Input.GetMouseButtonUp(0)) // Left Button Released, update selection list
 			{
 				selecting = false;
-				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
+				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
 				Vector3 screenPos;
 				for(int i = 0; i < viruses.Length; i++)
 				{
-					screenPos = camera.WorldToScreenPoint(viruses[i].transform.localPosition);
+					screenPos = cam.WorldToScreenPoint(viruses[i].transform.localPosition);
 					screenPos.y = Screen.height - screenPos.y;
 					if(selectionRect.Contains(screenPos))
 					{
-						selectedViruses.Add(viruses[i]);
-						viruses[i].GetComponent<VirusScript>().Selected = true;
+						viruses[i].GetComponent<LegitVirusScript>().selected=true;
+					}
+					else
+					{
+						viruses[i].GetComponent<LegitVirusScript>().selected=false;
 					}
 				}
 				selectionRect.xMin = -5;
@@ -116,6 +107,7 @@ namespace AssemblyCSharp
 				selectionRect.xMax = -5; 
 				selectionRect.yMax = -5;
 			}
+			/**
 			if(Input.GetMouseButtonDown(1))
 			{
 				//Contexually decide what to do with the selected viruses
@@ -129,7 +121,11 @@ namespace AssemblyCSharp
 					}
 				}
 			}
+			*/
 		}
+		
+		
+		
 		
 		void OnGUI()
 		{

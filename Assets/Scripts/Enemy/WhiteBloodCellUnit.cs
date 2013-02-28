@@ -20,6 +20,12 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 				
 	private AudioSource boomSound;
 	
+	//This is for determining if it's infected or not
+	//Can't shoot if you're infected!
+	//Don't know if we want to do something with this
+	public bool infected;
+	
+	
 	void Start() {
 		boomSound = (AudioSource)gameObject.AddComponent("AudioSource");
         boomSound.clip = (AudioClip)Resources.Load("damage");
@@ -63,6 +69,8 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	/// The point the white blood cell is moving towards
 	/// </param>
 	public bool MoveTowards(Vector3 point) {
+		
+		
 		goalPosition = point;
 		getWhiteBloodCells();
 		
@@ -107,8 +115,10 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	/// </param>
 	public void Fire(Vector3 point, float speedOfProjectile){
 		
-		if(fireTimer<=0){
-			boomSound.Play();
+		if(fireTimer<=0 && !infected){
+			if(boomSound!=null){
+				boomSound.Play();
+			}
 			//Instantiate the projectile
 			GameObject projectileObj = Instantiate(projectile,transform.position,transform.rotation) as GameObject;
 			WhiteBloodCellProjectile cellProj = projectileObj.GetComponent<WhiteBloodCellProjectile>();

@@ -1,15 +1,22 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace AssemblyCSharp
-{
 	public class RedBloodCellScript : MonoBehaviour 
 	{	
 		private const float fallSpeed = 0.75f;
 		private bool infected = false;
-		private float infectionTimer = 1000f;
-		private float number = 0;
+		//It takes half a second to infect a red blood cell
+		public float infectionTimer = 0.5f;
+		private float infectionTimerMax;
+		//Number is the p
+		private int nextIndex = 0;
 		private float infectionSpeed = 0f;
+		
+		//Collection of viruses (max you can have is 10)
+		public LegitVirusScript[] viruses;
+		
+		//The body of this RedBloodCellScript
+		public GameObject body;
 		
 		//Random variable amounds
 		private float x, y, z;
@@ -28,56 +35,195 @@ namespace AssemblyCSharp
 			x = Random.Range(-1f,1f);
 			y = Random.Range(-1f,1f);
 			z = Random.Range(-1f,1f);
+			
+			
+			viruses = new LegitVirusScript[10];
+			
+			infectionTimerMax=infectionTimer;
 		}
 		
-		public void Infect(GameObject virus)
+		public void Infect(LegitVirusScript virus, float _infectionSpeed)
 		{
-			infected = true;
-			infectionSpeed += virus.GetComponent<VirusScript>().InfectionSpeed;
-			number += virus.GetComponent<VirusScript>().ReproductionLevel;
+			nextIndex = fixVirusArray();
+			
+			
+			if(nextIndex<viruses.Length-1 && !weHaveThatVirus(virus.gameObject)){
+				infected = true;
+				infectionSpeed +=_infectionSpeed;
+				
+				
+				//Next Index is the next index to place a virus at
+				viruses[nextIndex] = virus;
+					
+				
+			}
 		}
 		
 		// Update is called once per frame
 		void Update () 
 		{
-			//Rotate randomly
-			transform.Rotate(x*speed*Time.deltaTime,y*speed*Time.deltaTime,z*speed*Time.deltaTime);
 			
-			/**
+			
+			
+			nextIndex = fixVirusArray();
+			
+			//If there's no viruses, we're no longer infected
+			if(nextIndex==0)
+			{
+				infected=false;
+				
+				//Allows for healing
+				if(infectionTimer<infectionTimerMax){
+					infectionTimer+=Time.deltaTime;
+				}
+				
+			}
+			
 			if(infected)
 			{
-				gameObject.renderer.material.color = Color.green;
-				gameObject.GetComponentsInChildren<Renderer>().
-				infectionTimer -= infectionSpeed;
+				
 				if(infectionTimer <= 0)
 				{
-					int distance;
-					GameObject currentNewVirus;
-					float direction = 0f;
-					float expellingForce = Random.value * number * 10;
-					Vector3 targetLocation = new Vector3();
-					for(int i = 0; i < number; i++)
+					
+					foreach(LegitVirusScript virus in viruses)
 					{
-						currentNewVirus = VirusHandler.spawnVirus(gameObject.transform.localPosition);
-						direction = Random.value * 2 * Mathf.PI;
-						targetLocation.x = Mathf.Cos(direction) * expellingForce + transform.localPosition.x;
-						targetLocation.y = Mathf.Sin(direction) * expellingForce + transform.localPosition.y;
-						targetLocation.z = gameObject.transform.localPosition.z;
-						currentNewVirus.GetComponent<VirusScript>().CurrentCommand = new MovementCommand(targetLocation, expellingForce);
+						if(virus!=null){
+							virus.YouCanStopInfectingNow();
+						}
+						
 					}
+				
+					//Make the new virus
+					Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
+				
+					
+				
 					Destroy(gameObject);
+					
+					
+					
 				}
+				else
+				{
+					//Decrement Timer
+					infectionTimer-=infectionSpeed*Time.deltaTime;
+					
+				}
+				
+				
+				//Color, should be yellow if it's infected
+				Color yellow = new Color(1.0f,1.0f,0.0f,1.0f);
+				
+				if(body.renderer.material.color.g!=1.0f){
+					body.renderer.material.color = Color.Lerp(body.renderer.material.color,yellow,Time.deltaTime*5);
+				}
+				
 			}
 			else
 			{
-				gameObject.renderer.material.color = Color.white;
+				//Rotate randomly
+				transform.Rotate(x*speed*Time.deltaTime,y*speed*Time.deltaTime,z*speed*Time.deltaTime);
+				
+				gameObject.transform.localPosition -= new Vector3(0f, fallSpeed, 0f);
+				
+				
+				//Color, should be red if it's not infected
+				Color red = new Color(1.0f,0.0f,0.0f,1.0f);
+				
+				if(body.renderer.material.color.g!=0.0f){
+					body.renderer.material.color = Color.Lerp(body.renderer.material.color,red,Time.deltaTime*5);
+				}
 			}
-			*/
-			gameObject.transform.localPosition -= new Vector3(0f, fallSpeed, 0f);
+			
+			
+			
+			
 			if(gameObject.transform.localPosition.y < Global.DeathLimit)
 			{
 				Destroy (gameObject);
 			}
 		}
+		
+		//Fixes up the array, returns number of viruses currently attached to red blood cell
+		public int fixVirusArray(){
+			int numOfViruses = 0;
+			int lastNonNullIndex=0;
+			
+			
+			for(int i =0; i<viruses.Length; i++)
+			{
+				if(viruses[i]!=null)
+				{
+					numOfViruses++;
+					lastNonNullIndex=i;
+				}
+			}
+			
+			if(numOfViruses==nextIndex)
+			{
+				//We're done! We have as many viruses as expected
+				return numOfViruses;
+			}
+			else if(numOfViruses!=0)
+			{
+				//We have less viruses than we're expecting, we should shift everyone down
+				for(int i =0; i<viruses.Length; i++)
+				{
+					if(i<=lastNonNullIndex)
+					{
+						if(viruses[i]==null)
+						{
+							//Go from the back to the front
+							for(int j=viruses.Length-1; j>i; j--)
+							{
+								if(viruses[j]!=null)
+								{
+									viruses[i] = viruses[j];
+									viruses[j]=null;
+									
+								}
+								
+							}
+							
+							//If viruses i is still null, we've done all we can
+							if(viruses[i]==null)
+							{
+								return numOfViruses;
+							}
+							
+						}
+						
+						
+						
+					}
+					
+					
+				}
+				
+				return numOfViruses;
+				
+				
+			}
+			
+			return 0;
+			
+		}
+		
+	
+		//Check to see if we already have that virus
+		bool weHaveThatVirus(GameObject virus){
+			bool match=false;
+		
+			foreach(LegitVirusScript vira in viruses){
+				if(vira!=null && virus==vira.gameObject){
+					match=true;
+				}
+			}
+		
+			return match;
+		
+		}
+		
+		
 	}
-}
+

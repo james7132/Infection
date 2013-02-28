@@ -88,7 +88,7 @@ namespace AssemblyCSharp
 			if(other.gameObject.tag == "Red Blood Cell")
 			{
 				GameObject redBloodCell = other.gameObject;
-				redBloodCell.GetComponent<RedBloodCellScript>().Infect(gameObject);
+				//redBloodCell.GetComponent<RedBloodCellScript>().Infect(gameObject);
 				Destroy(gameObject);
 			}
 		}

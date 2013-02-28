@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-namespace AssemblyCSharp
-{
+//namespace AssemblyCSharp
+//{
 	public class Global	 : MonoBehaviour 
 	{
 		public static GameState GameState = GameState.IN_GAME;
@@ -51,5 +51,5 @@ namespace AssemblyCSharp
 	{
 		IN_GAME, PAUSE, GAME_OVER
 	}
-}
+//}
 

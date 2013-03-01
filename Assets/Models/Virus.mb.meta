@@ -7,13 +7,92 @@ ModelImporter:
     100002: group1
     100004: polySurface10
     100006: //RootNode
+    100008: group2
+    100010: group3
+    100012: polySurface12
+    100014: polySurface13
+    100016: polySurface14
+    100018: polySurface15
+    100020: polySurface16
+    100022: polySurface17
+    100024: polySurface18
+    100026: polySurface19
+    100028: polySurface20
+    100030: polySurface21
+    100032: polySurface22
+    100034: polySurface23
+    100036: polySurface24
+    100038: polySurface25
+    100040: polySurface26
+    100042: polySurface27
+    100044: polySurface28
+    100046: polySurface29
+    100048: transform1
+    100050: transform10
+    100052: transform11
+    100054: transform12
+    100056: transform13
+    100058: transform14
+    100060: transform15
+    100062: transform16
+    100064: transform17
+    100066: transform18
+    100068: transform2
+    100070: transform3
+    100072: transform4
+    100074: transform5
+    100076: transform6
+    100078: transform7
+    100080: transform8
+    100082: transform9
     400000: group
     400002: group1
     400004: polySurface10
     400006: //RootNode
+    400008: group2
+    400010: group3
+    400012: polySurface12
+    400014: polySurface13
+    400016: polySurface14
+    400018: polySurface15
+    400020: polySurface16
+    400022: polySurface17
+    400024: polySurface18
+    400026: polySurface19
+    400028: polySurface20
+    400030: polySurface21
+    400032: polySurface22
+    400034: polySurface23
+    400036: polySurface24
+    400038: polySurface25
+    400040: polySurface26
+    400042: polySurface27
+    400044: polySurface28
+    400046: polySurface29
+    400048: transform1
+    400050: transform10
+    400052: transform11
+    400054: transform12
+    400056: transform13
+    400058: transform14
+    400060: transform15
+    400062: transform16
+    400064: transform17
+    400066: transform18
+    400068: transform2
+    400070: transform3
+    400072: transform4
+    400074: transform5
+    400076: transform6
+    400078: transform7
+    400080: transform8
+    400082: transform9
     2300000: polySurface10
+    2300002: polySurface29
     3300000: polySurface10
+    3300002: polySurface29
     4300000: polySurface10
+    4300002: polySurface29
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -31,6 +31,7 @@ public class WhiteBloodCellUnit : MonoBehaviour {
         boomSound.clip = (AudioClip)Resources.Load("damage");
 		boomSound.volume = 0.5f;
 		boomSound.rolloffMode = AudioRolloffMode.Custom;
+		fireTimer = Random.Range(0,fireTimerMax+1);
 	}
 	
 	void OnTriggerStay(Collider other) {

@@ -6,8 +6,8 @@ using UnityEngine;
 	public class Global	 : MonoBehaviour 
 	{
 		public static GameState GameState = GameState.IN_GAME;
+		public double virusCountToScoreRatio = 100;
 		public double playerScore;
-		public double virusCountToScoreRatio;
 		public int Upper_Limit = 360;
 		public int Death_Limit = -400;
 		public int Left_Limit = 475;
@@ -34,16 +34,10 @@ using UnityEngine;
 		{
 			GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
 			GameObject[] infectedBloodCells = GameObject.FindGameObjectsWithTag("Infected Blood Cell");
-			playerScore += Time.deltaTime * virusCountToScoreRatio * (Math.Log(Math.Pow(viruses.Length, 3)) + 1);
 			if(viruses.Length <= 0 && infectedBloodCells.Length <= 0)
 			{
 				GameState = GameState.GAME_OVER;
 			}
-		}
-		
-		void OnGUI()
-		{
-			GUI.Label(new Rect(0, 0, Screen.width, Screen.height), ((int)(playerScore)).ToString());
 		}
 	}
 	

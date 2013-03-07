@@ -81,7 +81,6 @@ public class LegitVirusScript : MonoBehaviour {
 		GetOtherPlayers();
 		MoveAway();
 		
-		
 		//COLOR DECISION
 		if(!selected)
 		{
@@ -106,7 +105,6 @@ public class LegitVirusScript : MonoBehaviour {
 		
 		
 		if(cam!=null ){
-			
 			
 			if(selected){
 				if(Input.GetMouseButton(1)){
@@ -143,6 +141,7 @@ public class LegitVirusScript : MonoBehaviour {
 		
 		}
 		else{
+			ScoreScript.addScore(1000, true, transform.localPosition);
 			GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera") as GameObject;
 			cam = camObj.GetComponent<Camera>();
 		}
@@ -239,6 +238,7 @@ public class LegitVirusScript : MonoBehaviour {
 					++totalBursts;
 					if (totalBursts == 1000) totalBursts = 0;
 				}
+				ScoreScript.addScore(1000, true, transform.localPosition);
 				Destroy(other.gameObject);
 			}
 		}

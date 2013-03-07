@@ -4,7 +4,22 @@ using System.Collections;
 public class LegitVirusScript : MonoBehaviour {
 	Camera cam;
 	public Vector3 goalPosition;
-	public float speed = 60.0f;
+	public float speed = 160.0f;
+	
+	//James added
+	private float baseSpeed = 160.0f;
+	private bool slowed;
+	private bool helpless;
+	private bool poisoned;
+	private float poisTimer = 0.0f;
+	private float hurtTimer;
+	private float slowTimer;
+	private float protectTimer;
+	
+	private Object[] bursts;
+	private float[] burstTimes;
+	private int totalBursts;
+	
 	private ArrayList viruses;
 	public bool makeBabies=true;
 	public float infectionSpeed=1.0f;
@@ -27,6 +42,20 @@ public class LegitVirusScript : MonoBehaviour {
 	
 	
 	void Start(){
+		//James added
+		//baseSpeed = speed;
+		slowed = false;
+		helpless = false;
+		poisoned = false;
+		poisTimer = 0.0f;
+		slowTimer = 0.0f;
+		hurtTimer = 0.0f;
+		protectTimer = 0.0f;
+		
+		bursts = new Object[1000];
+		burstTimes = new float[1000];
+		totalBursts = 0;
+		
 		goalPosition=transform.position;
 		viruses = new ArrayList();
 		
@@ -117,6 +146,61 @@ public class LegitVirusScript : MonoBehaviour {
 			GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera") as GameObject;
 			cam = camObj.GetComponent<Camera>();
 		}
+		
+		//James Added
+		if (slowed) {
+			speed = baseSpeed/2.0f;
+		}
+		
+		if (!slowed) {
+			speed = baseSpeed;
+		}
+		
+		if (!poisoned) {
+			poisTimer = 0.0f;	
+		}
+		if (poisoned) {
+			poisTimer += Time.deltaTime;
+		}
+		if (poisTimer > 5.0f && poisoned) {
+			Destroy(gameObject);
+		}
+		
+		hurtTimer += Time.deltaTime;
+		protectTimer += Time.deltaTime;
+		slowTimer += Time.deltaTime;
+		
+		if (poisoned)
+			hurtTimer = 0.0f;
+		if (helpless)
+			protectTimer = 0.0f;
+		if (slowed)
+			slowTimer = 0.0f;
+		
+		if (hurtTimer > 0.5f) {
+			poisoned = false;
+			hurtTimer = 0.0f;
+		}
+		if (protectTimer > 0.5f) {
+			helpless = false;
+			protectTimer = 0.0f;
+		}
+		if (slowTimer > 0.5f) {
+			slowed = false;
+			slowTimer = 0.0f;
+		}
+		
+		
+		for (int i=0; i<totalBursts;++i) {
+			if (burstTimes[i] != null && bursts[i] != null) {	
+				burstTimes[i] += Time.deltaTime;
+				if (burstTimes[i] >= 3.0f) {
+					Destroy(bursts[i]);
+					burstTimes[i] = 0.0f;
+				}
+			}
+		}
+		
 	}
 	
 	void MoveAway(){
@@ -146,18 +230,42 @@ public class LegitVirusScript : MonoBehaviour {
 					juicySound.Play();
 				}
 				if(explosionFab) {
-					Instantiate(explosionFab, transform.position, transform.rotation);
+					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
+					burstTimes[totalBursts] = 0.0f;
+					++totalBursts;
+					if (totalBursts == 1000) totalBursts = 0;
 				}
 			}
-			if(other.tag=="Enemy"){
+			
+			//James Added - added helpless condition
+			if(other.tag=="Enemy" && !helpless){
 				deathSound.Play();
 				if(explosionFab) {
-					Instantiate(explosionFab, transform.position, transform.rotation);
+					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
+					burstTimes[totalBursts] = 0.0f;
+					++totalBursts;
+					if (totalBursts == 1000) totalBursts = 0;
 				}
 				Destroy(other.gameObject);
 			}
 		}
 	}
+	
+	//James Added
+	void OnTriggerStay(Collider other) {
+		if(other.tag=="MedicineSlow"){
+			slowed = true;
+		}
+		
+		if(other.tag=="MedicineHurt"){
+			poisoned = true;
+		}
+		
+		if(other.tag=="MedicineProtect"){
+			helpless = true;
+		}
+	}
+	
 	
 	void GetOtherPlayers(){
 		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");

@@ -170,13 +170,6 @@ public class LegitVirusScript : MonoBehaviour {
 		protectTimer += Time.deltaTime;
 		slowTimer += Time.deltaTime;
 		
-		if (poisoned)
-			hurtTimer = 0.0f;
-		if (helpless)
-			protectTimer = 0.0f;
-		if (slowed)
-			slowTimer = 0.0f;
-		
 		if (hurtTimer > 0.5f) {
 			poisoned = false;
 			hurtTimer = 0.0f;
@@ -255,14 +248,17 @@ public class LegitVirusScript : MonoBehaviour {
 	void OnTriggerStay(Collider other) {
 		if(other.tag=="MedicineSlow"){
 			slowed = true;
+			slowTimer = 0.0f;
 		}
 		
 		if(other.tag=="MedicineHurt"){
 			poisoned = true;
+			hurtTimer = 0.0f;
 		}
 		
 		if(other.tag=="MedicineProtect"){
 			helpless = true;
+			protectTimer = 0.0f;
 		}
 	}
 	

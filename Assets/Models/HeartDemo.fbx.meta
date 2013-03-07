@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d75f0d8989e4e47689c3baeeb13569ce
+guid: ab2fb4a226f08454db590825386d4b2e
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -24,20 +24,8 @@ ModelImporter:
     400016: transform3
     400018: transform4
     2300000: polySurface1
-    2300002: transform1
-    2300004: transform2
-    2300006: transform3
-    2300008: transform4
     3300000: polySurface1
-    3300002: transform1
-    3300004: transform2
-    3300006: transform3
-    3300008: transform4
-    4300000: transform1
-    4300002: transform2
-    4300004: transform3
-    4300006: transform4
-    4300008: polySurface1
+    4300000: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -55,7 +43,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     swapUVChannels: 0

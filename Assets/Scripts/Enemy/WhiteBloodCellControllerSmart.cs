@@ -47,7 +47,7 @@ public class WhiteBloodCellControllerSmart : MonoBehaviour {
 			
 		Vector3 distanceToVirus = virus.transform.position-whiteBloodCell.transform.position;
 			
-			Debug.Log("Even getting here: "+distanceToVirus);
+			//Debug.Log("Even getting here: "+distanceToVirus);
 			if(distanceToVirus.magnitude<200){
 				distanceToVirus.Normalize();
 				
@@ -132,7 +132,7 @@ public class WhiteBloodCellControllerSmart : MonoBehaviour {
 	
 	//We'll need to change this when we have other enemies
 	void getWhiteBloodCells(){
-		whiteBloodCells=GameObject.FindGameObjectsWithTag("Enemy");
+		whiteBloodCells=GameObject.FindGameObjectsWithTag("Enemy Smart");
 	}
 	
 	void getViruses(){

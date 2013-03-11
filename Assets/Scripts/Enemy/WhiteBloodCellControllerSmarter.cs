@@ -165,7 +165,7 @@ public class WhiteBloodCellControllerSmarter : MonoBehaviour {
 	
 	//We'll need to change this when we have other enemies
 	void getWhiteBloodCells(){
-		whiteBloodCells=GameObject.FindGameObjectsWithTag("Enemy");
+		whiteBloodCells=GameObject.FindGameObjectsWithTag("Enemy Smarter");
 	}
 	
 	void getViruses(){

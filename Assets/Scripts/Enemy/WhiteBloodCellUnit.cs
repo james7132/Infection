@@ -15,6 +15,7 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	public float xMin = -440;
 	public float yMax = 350;
 	public float yMin = -350;
+	public string enemyType;
 	
 	GameObject[] whiteBloodCells;
 				
@@ -31,11 +32,12 @@ public class WhiteBloodCellUnit : MonoBehaviour {
         boomSound.clip = (AudioClip)Resources.Load("damage");
 		boomSound.volume = 0.5f;
 		boomSound.rolloffMode = AudioRolloffMode.Custom;
-		fireTimer = Random.Range(0,fireTimerMax+1);
+		fireTimer = Random.Range(0,fireTimerMax*100+1)/100;
 	}
 	
 	void OnTriggerStay(Collider other) {
-		if(other.gameObject.tag == "Enemy")
+		string otherTag = other.gameObject.tag;
+		if(otherTag == "Enemy Dumb" || otherTag == "Enemy Smart" || otherTag == "Enemy Smarter")
 		{
 			Vector3 direction = other.transform.position - transform.position;
 			transform.position -= direction.normalized * Time.deltaTime * 50000 / (1+Mathf.Pow(direction.magnitude,7/3));
@@ -70,15 +72,15 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 	/// The point the white blood cell is moving towards
 	/// </param>
 	public bool MoveTowards(Vector3 point) {
-		
-		
 		goalPosition = point;
 		getWhiteBloodCells();
 		
 		// tangential movement prevents clumped viruses from looking too stiff
-		transform.position += speed*(0.9f*getGoalMovement() + 0.1f*getTangentialMovement());
+		Vector3 movement = speed*(0.9f*getGoalMovement() + 0.1f*getTangentialMovement());
 		// prevent movement on the z axis
-		transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+		movement = new Vector3(movement.x, movement.y, 0);
+		// update unit position
+		transform.position += movement;
 		
 		return (transform.position - goalPosition).magnitude < 0.1f;
 	}
@@ -88,6 +90,7 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 		if(fireTimer>0){
 			fireTimer-=Time.deltaTime;
 		}
+		updateType();
 	}
 	
 	void getWhiteBloodCells(){
@@ -137,4 +140,26 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 		
 	}
 	
+	public void setType(string enemyType) {
+		this.enemyType = enemyType;
+		switch (enemyType) {
+		case "Dumb":
+			gameObject.tag = "Enemy Dumb";
+			break;
+		case "Smart":
+			gameObject.tag = "Enemy Smart";
+			break;
+		case "Smarter":
+			gameObject.tag = "Enemy Smarter";
+			break;
+		default:
+			goto case "Dumb";
+		}
+	}
+	
+	private void updateType() {
+		if (enemyType != null) {
+			setType(enemyType);
+		}
+	}
 }

@@ -42,7 +42,7 @@ namespace AssemblyCSharp
 		
 		// Update is called once per frame
 		void Update () 
-		{
+		{		
 			if(Input.GetMouseButtonDown(0)) //Left Button Pressed Down, start selection
 			{
 				startLoc = Input.mousePosition;

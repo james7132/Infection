@@ -66,6 +66,10 @@ public class ScoreScript : MonoBehaviour
 		}
 	}
 	
+	public static float getScore() {
+		return instance.score;
+	}
+	
 	private struct ScorePopup
 	{
 		private long amount;

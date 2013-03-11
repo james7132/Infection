@@ -28,11 +28,19 @@ public class WhiteBloodCellProjectile : MonoBehaviour {
 	
 	//If you hit a virus, destroy it and yourself
 	void OnTriggerEnter(Collider other){
-		
-		
 		if(other.tag=="Player"){
 			Destroy(other.gameObject);
 			Destroy(gameObject);
+			// I DON'T LIKE THIS BEING HERE RIGHT NOW BUT THIS NEEDS TO BE CALLED WHEN THE LAST VIRUS HAS DIED
+			if (allVirusesDead()) {
+				PlayerPrefs.SetFloat("player score",ScoreScript.getScore());
+				Application.LoadLevel("HighScoreMenu");
+			}
 		}
 	}
+	
+	private bool allVirusesDead() {
+		GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
+		return (viruses.Length == 0);
+	}	
 }

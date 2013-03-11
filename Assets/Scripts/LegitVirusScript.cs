@@ -230,7 +230,7 @@ public class LegitVirusScript : MonoBehaviour {
 			}
 			
 			//James Added - added helpless condition
-			if(other.tag=="Enemy" && !helpless){
+			if((other.tag=="Enemy Dumb" || other.tag=="Enemy Smart" || other.tag=="EnemySmarter") && !helpless){
 				deathSound.Play();
 				if(explosionFab) {
 					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);

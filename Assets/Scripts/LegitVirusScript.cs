@@ -122,6 +122,10 @@ public class LegitVirusScript : MonoBehaviour {
 			//Moving bits
 			if(!infecting)
 			{
+				//Turn to face goal position
+				Quaternion targetRotation = (Quaternion.LookRotation((goalPosition-transform.position)));
+				transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation,Time.deltaTime*5.0f);
+				
 				
 				//Move normally
 				Vector3 difference = goalPosition-transform.position;

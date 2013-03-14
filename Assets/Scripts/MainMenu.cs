@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 	private readonly int[] buttonSceneStarts = {0, 1, 2, 3};
 	private const float buttonWidth = 0.15f;
 	private const float buttonSpacing = 0.025f;
+	public GUITexture logoItem;
 	public GUIStyle guiStyle;
 	
 	public MainMenu()
@@ -34,7 +35,7 @@ public class MainMenu : MonoBehaviour
 	{
 		int x = Screen.width;
 		int y = Screen.height;
-		GUI.Label(new Rect(0.25f * x, 0.25f * y, 0.5f * x, 0.5f * y), "INFECTION", guiStyle);
+		logoItem.pixelInset = new Rect(-0.35f * x, -0.15f * y, 0.75f * x, 0.35f * y);
 		for(int i = 0; i < buttonRects.Length; i++)
 		{
 			if(GUI.Button(

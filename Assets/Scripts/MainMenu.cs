@@ -4,8 +4,8 @@ using System.Collections;
 public class MainMenu : MonoBehaviour 
 {
 	private readonly Rect[] buttonRects;
-	private readonly string[] buttonName = {"Start Game", "Instructions", "Credits", "Options"};
-	private readonly int[] buttonSceneStarts = {0, 1, 2, 3};
+	private readonly string[] buttonName = {"Start Game", "Instructions", "Credits", "Options", "Highscores"};
+	private readonly int[] buttonSceneStarts = {0, 1, 2, 3, 4};
 	private const float buttonWidth = 0.15f;
 	private const float buttonSpacing = 0.025f;
 	public GUITexture logoItem;
@@ -38,15 +38,18 @@ public class MainMenu : MonoBehaviour
 		logoItem.pixelInset = new Rect(-0.35f * x, -0.15f * y, 0.75f * x, 0.35f * y);
 		for(int i = 0; i < buttonRects.Length; i++)
 		{
-			if(GUI.Button(
-				new Rect(
-				buttonRects[i].x * x,
-				buttonRects[i].y * y,
-				buttonRects[i].width * x,
-				buttonRects[i].height * y),
-				buttonName[i]))
+			bool button = GUI.Button(new Rect(buttonRects[i].x * x, buttonRects[i].y * y, buttonRects[i].width * x, buttonRects[i].height * y), buttonName[i]);
+			if(button)
 			{
-				Application.LoadLevel("MainGamePlay");
+				switch (buttonName[i]) {
+				case "Highscores":
+					PlayerPrefs.SetFloat("player score",0.0f);
+					Application.LoadLevel ("HighscoreMenu");
+					break;
+				default:
+					Application.LoadLevel("MainGamePlay");
+					break;
+				}
 			}
 		}
 	}

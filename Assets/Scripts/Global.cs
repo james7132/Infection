@@ -32,7 +32,7 @@ using UnityEngine;
 		
 		void Update()
 		{
-			GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
+			GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
 			GameObject[] infectedBloodCells = GameObject.FindGameObjectsWithTag("Infected Blood Cell");
 			if(viruses.Length <= 0 && infectedBloodCells.Length <= 0)
 			{

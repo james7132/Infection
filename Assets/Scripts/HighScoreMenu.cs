@@ -3,10 +3,10 @@ using System.Collections;
 
 public class HighScoreMenu : MonoBehaviour 
 {
-	private string playerName = "n00b";
-	private string[] names = {"Player 1","Player 2","Player 3","Player 4","Player 5","Player 6","Player 7","Player 8","Player 9","Player 10"};
+	private string playerName;
+	private string[] names;
 	private float playerScore;
-	private float[] scores = {250000,175000,140000,100000,75000,50000,25000,12500,6250,100};
+	private float[] scores;
 	private bool addButtonPressed = false;
 	public GUIStyle guiStyle;
 	
@@ -18,6 +18,8 @@ public class HighScoreMenu : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		names = new string[10];
+		scores = new float[10];
 		playerName = PlayerPrefs.GetString("player name");
 		playerScore = PlayerPrefs.GetFloat("player score");
 		
@@ -58,22 +60,29 @@ public class HighScoreMenu : MonoBehaviour
 			yPos += (int) (0.05*yMax);
 			
 			if (!addButtonPressed) {
+				GUI.SetNextControlName("Name Textbox");
 				playerName = GUI.TextField(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerName, 20);
 				GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerScore.ToString());
+				
+				// focus on the player name textbox
+				if (GUI.GetNameOfFocusedControl() == string.Empty) {
+    				GUI.FocusControl("Name Textbox");
+				}
 				
 				yPos += (int) (0.05*yMax);
 				bool addButton = GUI.Button(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "Add Score");
 				
-				if (addButton) {
+				if (addButton || Input.GetKeyUp("enter")) {
 					addButtonPressed = true;
 					addScore();
 				}
 			} 
-		} else {
+		} else if (playerScore != 0.0f) {
 			GUI.Label(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "You Scored");
 			GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerScore.ToString());
 		}
 		
+		GUI.SetNextControlName("Escape Button");
 		bool returnButton = GUI.Button(new Rect(0.1f * xMax, 0.8f * yMax, 0.2f * xMax, 0.035f * yMax), "Return to Menu");
 		if (returnButton) {
 			Application.LoadLevel("MainMenu");
@@ -99,6 +108,6 @@ public class HighScoreMenu : MonoBehaviour
 		
 		// insert player's score in appropriate location
 		scores[rank] = playerScore;
-		names[rank] = playerName; 
+		names[rank] = (playerName != "") ? playerName : "noob"; 
 	}
 }

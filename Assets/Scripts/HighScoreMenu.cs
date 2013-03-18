@@ -7,6 +7,7 @@ public class HighScoreMenu : MonoBehaviour
 	private string[] names;
 	private float playerScore;
 	private float[] scores;
+	private int numScores;
 	private bool addButtonPressed = false;
 	public GUIStyle guiStyle;
 	
@@ -49,37 +50,44 @@ public class HighScoreMenu : MonoBehaviour
 		// display all the recorded high scores
 		int yPos = (int) (0.25 * yMax);
 		int count = 0;
+		int numScores = 0;
+		
 		for (int i = 0; i < names.Length; i++) {
-			GUI.Label(new Rect(0.1f * xMax, yPos, 0.1f * xMax, 0.1f * yMax), PlayerPrefs.GetString("name"+i), guiStyle);
-			GUI.Label(new Rect(0.5f * xMax, yPos, 0.1f * xMax, 0.1f * yMax), PlayerPrefs.GetFloat("score"+i).ToString(), guiStyle);
-			yPos += (int) (0.025*yMax);
+			if (names[i] != string.Empty) {
+				GUI.Label(new Rect(0.1f * xMax, yPos, 0.1f * xMax, 0.1f * yMax), PlayerPrefs.GetString("name"+i), guiStyle);
+				GUI.Label(new Rect(0.5f * xMax, yPos, 0.1f * xMax, 0.1f * yMax), PlayerPrefs.GetFloat("score"+i).ToString(), guiStyle);
+				yPos += (int) (0.025*yMax);
+				numScores = i+1;
+			}
 		}
 		
 		// only allow player to edit name and add score to high score table when their score is at least as good as the lowest high score
-		if (playerScore >= scores[scores.Length-1]) {
-			yPos += (int) (0.05*yMax);
-			
-			if (!addButtonPressed) {
-				GUI.SetNextControlName("Name Textbox");
-				playerName = GUI.TextField(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerName, 20);
-				GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerScore.ToString());
-				
-				// focus on the player name textbox
-				if (GUI.GetNameOfFocusedControl() == string.Empty) {
-    				GUI.FocusControl("Name Textbox");
-				}
-				
+		if (playerScore > 0.0f) {
+			if (playerScore >= scores[numScores-1]) {
 				yPos += (int) (0.05*yMax);
-				bool addButton = GUI.Button(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "Add Score");
 				
-				if (addButton || Input.GetKeyUp("enter")) {
-					addButtonPressed = true;
-					addScore();
+				if (!addButtonPressed) {
+					GUI.SetNextControlName("Name Textbox");
+					playerName = GUI.TextField(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 21), playerName, 20);
+					GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 30), playerScore.ToString());
+					
+					// focus on the player name textbox
+					if (GUI.GetNameOfFocusedControl() == string.Empty) {
+	    				GUI.FocusControl("Name Textbox");
+					}
+					
+					yPos += (int) (0.05*yMax);
+					bool addButton = GUI.Button(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "Add Score");
+					
+					if (addButton || Input.GetKeyUp("enter")) {
+						addButtonPressed = true;
+						addScore();
+					}
 				}
-			} 
-		} else if (playerScore != 0.0f) {
-			GUI.Label(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "You Scored");
-			GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerScore.ToString());
+			} else {
+				GUI.Label(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "You Scored");
+				GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), playerScore.ToString());
+			}
 		}
 		
 		GUI.SetNextControlName("Escape Button");

@@ -35,8 +35,9 @@ public class ScoreScript : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
-		score += Time.deltaTime * (float)virusCountToScoreRatio * (Mathf.Log10(Mathf.Pow(viruses.Length, 3)) + 1);
+		//GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
+		int totalVirusCount = Global.getTotalVirusCount();
+		score += Time.deltaTime * (float)virusCountToScoreRatio * (Mathf.Log10(Mathf.Pow(totalVirusCount, 3)) + 1);
 		for(int i = 0; i < popups.Count; i++)
 		{
 			popups[i].Update();

@@ -64,4 +64,32 @@ public class Background : MonoBehaviour
 			//layers[i].renderer.material.color = colors[i];
 		}
 	}
+	
+	public void setColors(Color color1, Color color2, Color color3, Color color4) {
+		colors[0] = color1;
+		colors[1] = color2;
+		colors[2] = color3;
+		colors[3] = color4;
+	}
+	
+	public void resetColors() {
+		colors[0] = Color.clear;
+		colors[1] = Color.clear;
+		colors[2] = Color.clear;
+		colors[3] = Color.clear;
+	}
+	
+	public void setSpeeds(float speed) {
+		speeds[0] = speed;
+		speeds[1] = speed;
+		speeds[2] = speed;
+		speeds[3] = speed;
+	}
+	
+	public void resetSpeeds() {
+		speeds[0] = speed1;
+		speeds[1] = speed2;
+		speeds[2] = speed3;
+		speeds[3] = speed4;
+	}
 }

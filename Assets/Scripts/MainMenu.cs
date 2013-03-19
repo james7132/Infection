@@ -23,13 +23,10 @@ public class MainMenu : MonoBehaviour
 	}
 	
 	// Use this for initialization
-	void Start () 
-	{
-	}
+	void Start () {}
 	
 	// Update is called once per frame
-	void Update () {
-	}
+	void Update () {}
 	
 	void OnGUI()
 	{
@@ -41,14 +38,18 @@ public class MainMenu : MonoBehaviour
 			bool button = GUI.Button(new Rect(buttonRects[i].x * x, buttonRects[i].y * y, buttonRects[i].width * x, buttonRects[i].height * y), buttonName[i]);
 			if(button)
 			{
-				switch (buttonName[i]) {
+				switch (buttonName[i]) 
+				{
+				case "Start Game":
+					PlayerPrefs.SetFloat("new game",1.0f);
+					Application.LoadLevel("MainGamePlay");
+					break;
 				case "Highscores":
 					PlayerPrefs.SetFloat("player score",0.0f);
 					Application.LoadLevel ("HighscoreMenu");
 					break;
 				default:
-					Application.LoadLevel("MainGamePlay");
-					break;
+					goto case "Start Game";
 				}
 			}
 		}

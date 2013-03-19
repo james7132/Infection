@@ -42,70 +42,72 @@ namespace AssemblyCSharp
 		
 		// Update is called once per frame
 		void Update () 
-		{		
-			if(Input.GetMouseButtonDown(0)) //Left Button Pressed Down, start selection
-			{
-				startLoc = Input.mousePosition;
-				startLoc.y = Screen.height - startLoc.y;
-				selectionRect.xMin = startLoc.x;
-				selectionRect.yMin = startLoc.y;
-				selectionRect.xMax = startLoc.x; 
-				selectionRect.yMax = startLoc.y;
-				//selectedViruses.Clear();
-				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
-				foreach(GameObject v in viruses)
+		{	
+			if (Global.GameState == GameState.IN_GAME) {
+				if(Input.GetMouseButtonDown(0)) //Left Button Pressed Down, start selection
 				{
-					v.GetComponent<VirusScript>().Selected = false;
-				}
-				selecting = true;
-			}
-			else if(Input.GetMouseButton(0)) //Left Button held down, update GUI
-			{
-				Vector2 mousePos = Input.mousePosition;
-				mousePos.y = Screen.height - mousePos.y;
-				if(mousePos.x > startLoc.x)
-				{
+					startLoc = Input.mousePosition;
+					startLoc.y = Screen.height - startLoc.y;
 					selectionRect.xMin = startLoc.x;
-					selectionRect.xMax = mousePos.x;
-				}
-				else
-				{
-					selectionRect.xMin = mousePos.x;
-					selectionRect.xMax = startLoc.x;
-				}
-				if(mousePos.y > startLoc.y)
-				{
 					selectionRect.yMin = startLoc.y;
-					selectionRect.yMax = mousePos.y;
-				}
-				else
-				{
-					selectionRect.yMin = mousePos.y;
+					selectionRect.xMax = startLoc.x; 
 					selectionRect.yMax = startLoc.y;
-				}
-			}
-			else if(Input.GetMouseButtonUp(0)) // Left Button Released, update selection list
-			{
-				selecting = false;
-				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
-				Vector3 screenPos;
-				for(int i = 0; i < viruses.Length; i++)
-				{
-					screenPos = cam.WorldToScreenPoint(viruses[i].transform.localPosition);
-					screenPos.y = Screen.height - screenPos.y;
-					if(selectionRect.Contains(screenPos))
+					//selectedViruses.Clear();
+					GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
+					foreach(GameObject v in viruses)
 					{
-						viruses[i].GetComponent<LegitVirusScript>().selected=true;
+						v.GetComponent<VirusScript>().Selected = false;
+					}
+					selecting = true;
+				}
+				else if(Input.GetMouseButton(0)) //Left Button held down, update GUI
+				{
+					Vector2 mousePos = Input.mousePosition;
+					mousePos.y = Screen.height - mousePos.y;
+					if(mousePos.x > startLoc.x)
+					{
+						selectionRect.xMin = startLoc.x;
+						selectionRect.xMax = mousePos.x;
 					}
 					else
 					{
-						viruses[i].GetComponent<LegitVirusScript>().selected=false;
+						selectionRect.xMin = mousePos.x;
+						selectionRect.xMax = startLoc.x;
+					}
+					if(mousePos.y > startLoc.y)
+					{
+						selectionRect.yMin = startLoc.y;
+						selectionRect.yMax = mousePos.y;
+					}
+					else
+					{
+						selectionRect.yMin = mousePos.y;
+						selectionRect.yMax = startLoc.y;
 					}
 				}
-				selectionRect.xMin = -5;
-				selectionRect.yMin = -5;
-				selectionRect.xMax = -5; 
-				selectionRect.yMax = -5;
+				else if(Input.GetMouseButtonUp(0)) // Left Button Released, update selection list
+				{
+					selecting = false;
+					GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
+					Vector3 screenPos;
+					for(int i = 0; i < viruses.Length; i++)
+					{
+						screenPos = cam.WorldToScreenPoint(viruses[i].transform.localPosition);
+						screenPos.y = Screen.height - screenPos.y;
+						if(selectionRect.Contains(screenPos))
+						{
+							viruses[i].GetComponent<LegitVirusScript>().selected=true;
+						}
+						else
+						{
+							viruses[i].GetComponent<LegitVirusScript>().selected=false;
+						}
+					}
+					selectionRect.xMin = -5;
+					selectionRect.yMin = -5;
+					selectionRect.xMax = -5; 
+					selectionRect.yMax = -5;
+				}
 			}
 			/**
 			if(Input.GetMouseButtonDown(1))

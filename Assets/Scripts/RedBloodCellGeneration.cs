@@ -8,7 +8,9 @@ namespace AssemblyCSharp
 		public GameObject prefab;
 		private static GameObject bloodCell;
 		private const int initialSpawnNumber = 30;
-		private const float spawnThreshold = 0.95f;
+		private const float spawnThreshold = 0.3f;
+		public float spawnTimer = 0;
+		private float spawnTimerMax = 0.25f;
 		
 		// Use this for initialization
 		void Start () 
@@ -24,9 +26,17 @@ namespace AssemblyCSharp
 		// Update is called once per frame
 		void Update () 
 		{
-			if(Random.value > spawnThreshold)
+			if (spawnTimer < spawnTimerMax) 
 			{
-				spawnNormalCell(Random.value * (Global.LeftLimit - Global.RightLimit) - Global.LeftLimit);
+				spawnTimer += Time.deltaTime;
+			} 
+			else 
+			{
+				if(Random.value > spawnThreshold)
+				{
+					spawnNormalCell(Random.value * (Global.LeftLimit - Global.RightLimit) - Global.LeftLimit);
+				}
+				spawnTimer = 0;
 			}
 		}
 		

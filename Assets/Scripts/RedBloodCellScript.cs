@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 	public class RedBloodCellScript : MonoBehaviour 
 	{	
-		private const float fallSpeed = 0.75f;
+		private const float fallSpeed = 50f;
 		private bool infected = false;
 		//It takes half a second to infect a red blood cell
 		public float infectionTimer = 0.5f;
@@ -23,6 +23,11 @@ using System.Collections.Generic;
 		//Speed to set
 		public float speed;
 		
+		private Object[] bursts;
+		private float[] burstTimes;
+		private int totalBursts;
+		public GameObject explosionFab;
+	
 		public bool Infected
 		{
 			get { return infected; }
@@ -36,7 +41,9 @@ using System.Collections.Generic;
 			y = Random.Range(-1f,1f);
 			z = Random.Range(-1f,1f);
 			
-			
+			bursts = new Object[1000];
+			burstTimes = new float[1000];
+			totalBursts = 0;
 			viruses = new LegitVirusScript[10];
 			
 			infectionTimerMax=infectionTimer;
@@ -95,9 +102,12 @@ using System.Collections.Generic;
 				
 					//Make the new virus
 					Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
-				
-					
-				
+					if(explosionFab) {
+						bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
+						burstTimes[totalBursts] = 0.0f;
+						++totalBursts;
+						if (totalBursts == 1000) totalBursts = 0;
+					}
 					Destroy(gameObject);
 				
 					
@@ -117,6 +127,7 @@ using System.Collections.Generic;
 				
 				if(body.renderer.material.color.g!=1.0f){
 					body.renderer.material.color = Color.Lerp(body.renderer.material.color,yellow,Time.deltaTime*5);
+					gameObject.transform.localScale += Vector3.one * 5 * Time.deltaTime;
 				}
 				
 			}
@@ -125,7 +136,7 @@ using System.Collections.Generic;
 				//Rotate randomly
 				transform.Rotate(x*speed*Time.deltaTime,y*speed*Time.deltaTime,z*speed*Time.deltaTime);
 				
-				gameObject.transform.localPosition -= new Vector3(0f, fallSpeed, 0f);
+				gameObject.transform.localPosition -= new Vector3(0f, fallSpeed*Time.deltaTime, 0f);
 				
 				
 				//Color, should be red if it's not infected
@@ -142,6 +153,16 @@ using System.Collections.Generic;
 			if(gameObject.transform.localPosition.y < Global.DeathLimit)
 			{
 				Destroy (gameObject);
+			}
+		
+			for (int i=0; i<totalBursts;++i) {
+				if (burstTimes[i] != null && bursts[i] != null) {	
+					burstTimes[i] += Time.deltaTime;
+					if (burstTimes[i] >= 3.0f) {
+						Destroy(bursts[i]);
+						burstTimes[i] = 0.0f;
+					}
+				}
 			}
 		}
 		

@@ -101,14 +101,18 @@ using System.Collections.Generic;
 					}
 				
 					//Make the new virus
-					Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
-					if(explosionFab) {
-						bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
-						burstTimes[totalBursts] = 0.0f;
-						++totalBursts;
-						if (totalBursts == 1000) totalBursts = 0;
-					}
-					Destroy(gameObject);
+					if(viruses[0]!=null){
+						Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
+						if(explosionFab) {
+							bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
+							burstTimes[totalBursts] = 0.0f;
+							++totalBursts;
+							if (totalBursts == 1000) totalBursts = 0;
+						}
+						Destroy(gameObject);
+					}	
+					
+					
 				
 					
 					

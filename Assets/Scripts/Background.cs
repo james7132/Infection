@@ -51,7 +51,9 @@ public class Background : MonoBehaviour
 	
 	void LateUpdate()
 	{
-		cam.backgroundColor = colors[0];
+		if(cam!=null){
+			cam.backgroundColor = colors[0];
+		}
 		for(int i = 0; i < 4; i++)
 		{
 			if(yOffset[i] >= 0x0FFFFF)
@@ -60,7 +62,9 @@ public class Background : MonoBehaviour
 			}
 			yOffset[i] += speeds[i] * Time.deltaTime;
 			uvOffset[i].y = yOffset[i];
-			layers[i].renderer.material.SetTextureOffset("_MainTex", uvOffset[i]);
+			if(layers[i]!=null){
+				layers[i].renderer.material.SetTextureOffset("_MainTex", uvOffset[i]);
+			}
 			//layers[i].renderer.material.color = colors[i];
 		}
 	}

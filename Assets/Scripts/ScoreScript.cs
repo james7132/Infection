@@ -38,16 +38,27 @@ public class ScoreScript : MonoBehaviour
 		//GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
 		int totalVirusCount = Global.getTotalVirusCount();
 		score += Time.deltaTime * (float)virusCountToScoreRatio * (Mathf.Log10(Mathf.Pow(totalVirusCount, 3)) + 1);
-		for(int i = 0; i < popups.Count; i++)
+		
+		ScorePopup[] scores = popups.ToArray();
+		
+		
+		//You can't update a List while iterating through it, have to use an array
+		for(int i = 0; i < scores.Length; i++)
 		{
-			popups[i].Update();
-			/*if(popups[i].Expired)
+			scores[i].Update();
+			
+			if(scores[i].Expired)
 			{
-				toRemove.Add(popups[i]);
-			}*/
+				
+				toRemove.Add(scores[i]);
+			}
 		}
+		
+		popups = new List<ScorePopup>(scores);
+		
 		for(int i = 0; i < toRemove.Count; i++)
 		{
+			//print("ever removing a popup?");
 			popups.Remove(toRemove[i]);
 		}
 		toRemove.Clear();
@@ -56,6 +67,8 @@ public class ScoreScript : MonoBehaviour
 	void OnGUI ()
 	{
 		GUI.Label(new Rect(0, 0, 100, 100), "" + (long)score);
+		
+		//print("Count: "+popups.Count);
 		for(int i = 0; i < popups.Count; i++)
 		{
 			GUI.color = popups[i].Color;
@@ -85,7 +98,7 @@ public class ScoreScript : MonoBehaviour
 			get { return screenLoc; }
 		}
 		
-		private float timeElapsed;
+		public float timeElapsed;
 		public bool Expired
 		{
 			get { return timeElapsed > ScoreScript.instance.popupMaxTime; }
@@ -111,7 +124,11 @@ public class ScoreScript : MonoBehaviour
 		public void Update()
 		{
 			float deltaTime = Time.deltaTime;
-			timeElapsed += deltaTime;
+			
+			
+			//timeElapsed += deltaTime;
+			//print("Time elapsed: "+timeElapsed);
+			
 			screenLoc.y += ((float)ScoreScript.instance.popupUpFloatSpeed) * Screen.height * (float)deltaTime;
 			float oldA = color.a;
 			color.a -= ((float)ScoreScript.instance.fadeOutSpeed) * (float)deltaTime;

@@ -33,12 +33,14 @@ public class LegitVirusScript : MonoBehaviour {
 	
 	//Infecting a thing, I cannot move 
 	public bool infecting;
-	private GameObject target;
+	public GameObject target;
 	private Vector3 prevTargetPos;
 	
 	
 	public bool selected=true;
 	
+	//The current Rotation Vector
+	Vector3 curVector;
 	
 	
 	void Start(){
@@ -81,12 +83,21 @@ public class LegitVirusScript : MonoBehaviour {
 		GetOtherPlayers();
 		MoveAway();
 		
+		
+		//If distance to target is too great, you aren't infected
+		if(target!=null){
+			Vector3 toTarget = target.transform.position-transform.position;
+			if(toTarget.magnitude>100){
+				infecting=false;
+			}
+		}
+		
 		//COLOR DECISION
 		if(!selected)
 		{
 			Color lightYellow = new Color(1.0f,(241.0f/255.0f),(135.0f/255.0f),1.0f);
 			
-			if(!renderer.material.color.Equals(lightYellow))
+			if(renderer!=null && !renderer.material.color.Equals(lightYellow))
 			{
 				renderer.material.color = Color.Lerp(renderer.material.color, lightYellow,Time.deltaTime*20);
 			}
@@ -96,7 +107,7 @@ public class LegitVirusScript : MonoBehaviour {
 		{
 			Color yellow = new Color(1.0f,1.0f,0.0f,1.0f);
 			
-			if(!renderer.material.color.Equals(yellow))
+			if(renderer!=null && !renderer.material.color.Equals(yellow))
 			{
 				renderer.material.color = Color.Lerp(renderer.material.color, yellow,Time.deltaTime*20);
 			}
@@ -109,6 +120,8 @@ public class LegitVirusScript : MonoBehaviour {
 			if(selected){
 				if(Input.GetMouseButton(1)){
 					goalPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y, 0));
+					
+					curVector = transform.forward;
 					goalPosition.z = 0;
 					if(_clickHoldLockCheck == false) {
 						_clickHoldLockCheck = true;
@@ -123,7 +136,29 @@ public class LegitVirusScript : MonoBehaviour {
 			if(!infecting)
 			{
 				//Turn to face goal position
-				Quaternion targetRotation = (Quaternion.LookRotation((goalPosition-transform.position)));
+				Vector3 lookVector = goalPosition-transform.position;
+				
+				//I have to do this because the virus model is rotated 90 degrees off
+				
+				Vector3 newLookVector = new Vector3();
+				
+				Quaternion targetRotation = new Quaternion();
+				if(lookVector.y>0){
+					
+					newLookVector = new Vector3(lookVector.y, -1*lookVector.x, lookVector.z);
+					//newLookVector = Vector3.forward;//new Vector3(lookVector.y, -1*lookVector.x, lookVector.z);
+					//newLookVector = new Vector3(-1*lookVector.y, lookVector.x, lookVector.z);
+					//newLookVector*=-1;
+					targetRotation = (Quaternion.LookRotation((newLookVector), Vector3.down));
+				}
+				
+				else{
+					newLookVector = new Vector3(lookVector.y, -1*lookVector.x, lookVector.z);
+					targetRotation = (Quaternion.LookRotation((newLookVector)));
+				}
+				
+				
+			
 				transform.rotation = Quaternion.Slerp(transform.rotation,targetRotation,Time.deltaTime*5.0f);
 				
 				
@@ -225,7 +260,7 @@ public class LegitVirusScript : MonoBehaviour {
 				if(juicySound!=null){
 					juicySound.Play();
 				}
-				if(explosionFab) {
+				if(explosionFab!=null && bursts!=null) {
 					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
 					burstTimes[totalBursts] = 0.0f;
 					++totalBursts;

@@ -55,7 +55,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 				goto case 4;
 		}
 		
-		return new Vector3(x,y,-22);
+		return new Vector3(x,y,5);
 	}
 	
 	private string getCellType () {

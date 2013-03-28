@@ -55,7 +55,7 @@ public class Global	 : MonoBehaviour
 				GameObject bg = GameObject.Find("Background");
 				bg.GetComponent<Background>().setSpeeds(0.001f);
 				bg.GetComponent<Background>().setColors(Color.yellow,Color.yellow,Color.yellow,Color.yellow);
-				Time.timeScale = 0.02f;
+				Time.timeScale = 0.75f;
 			}
 			break;
 		case GameState.PAUSE:

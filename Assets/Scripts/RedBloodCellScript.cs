@@ -18,6 +18,8 @@ using System.Collections.Generic;
 		//The body of this RedBloodCellScript
 		public GameObject body;
 		
+		public float maxScaleFlucutation = 0.5f;
+	
 		//Random variable amounds
 		private float x, y, z;
 		//Speed to set
@@ -46,6 +48,12 @@ using System.Collections.Generic;
 			totalBursts = 0;
 			viruses = new LegitVirusScript[10];
 			
+			transform.localScale = new Vector3(
+				transform.localScale.x * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation),
+				transform.localScale.y * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation),
+				transform.localScale.z * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation)
+			);
+		
 			infectionTimerMax=infectionTimer;
 		}
 		

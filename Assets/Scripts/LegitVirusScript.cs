@@ -27,7 +27,6 @@ public class LegitVirusScript : MonoBehaviour {
 	
 	private AudioSource deathSound;
 	private AudioSource juicySound;
-	private AudioSource clickSound;
 
 	public GameObject explosionFab;
 	
@@ -70,13 +69,7 @@ public class LegitVirusScript : MonoBehaviour {
         juicySound.clip = (AudioClip)Resources.Load("gameover-bodyfailure");
 		juicySound.volume = 0.45f;
 		juicySound.rolloffMode = AudioRolloffMode.Custom;
-		
-		clickSound = (AudioSource)gameObject.AddComponent("AudioSource");
-        clickSound.clip = (AudioClip)Resources.Load("selection");
-		clickSound.volume = 0.35f;
-		clickSound.rolloffMode = AudioRolloffMode.Custom;
 	}
-	private bool _clickHoldLockCheck = false;
 	
 	// Update is called once per frame
 	void Update () {
@@ -117,19 +110,11 @@ public class LegitVirusScript : MonoBehaviour {
 		
 		if(cam!=null ){
 			
-			if(selected){
-				if(Input.GetMouseButton(1)){
+			if(selected && Input.GetMouseButton(1)){
 					goalPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y, 0));
 					
 					curVector = transform.forward;
 					goalPosition.z = 0;
-					if(_clickHoldLockCheck == false) {
-						_clickHoldLockCheck = true;
-						clickSound.Play ();
-					}
-				} else {
-					_clickHoldLockCheck = false;
-				}
 			}
 			
 			//Moving bits

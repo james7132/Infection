@@ -81,6 +81,8 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 		movement = new Vector3(movement.x, movement.y, 0);
 		// update unit position
 		transform.position += movement;
+		// Lock unit position to Z = 0
+		transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 		
 		return (transform.position - goalPosition).magnitude < 0.1f;
 	}

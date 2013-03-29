@@ -76,7 +76,7 @@ public class Global	 : MonoBehaviour
 			break;
 		case GameState.GAME_OVER:
 			// GAME OVER
-			PlayerPrefs.SetFloat("player score",ScoreScript.getScore());
+			PlayerPrefs.SetInt("player score",(int) ScoreScript.getScore());
 			Application.LoadLevel("HighScoreMenu");
 			break;
 		default:

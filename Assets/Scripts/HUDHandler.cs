@@ -11,8 +11,6 @@ public class HUDHandler : MonoBehaviour
 	private float startTime;
 	private string elapsedTime;
 	
-	public ScoreScript scoreScript;
-	
 	private Color drkRed = new Color(.8f, .1f, .1f);
 	private const int VLIMIT = 6;	//number of viruses to signal a warning
 
@@ -28,7 +26,7 @@ public class HUDHandler : MonoBehaviour
 	{
 		GameObject[] viruses = GameObject.FindGameObjectsWithTag("Player");
 		
-		HUD_score.text = Mathf.Round(scoreScript.score).ToString();
+		HUD_score.text = Mathf.Round(ScoreScript.getScore()).ToString();
 		float guiTime = Time.time - startTime;
 		if (viruses.Length > 0)
 		{	 

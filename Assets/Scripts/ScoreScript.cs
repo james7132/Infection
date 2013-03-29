@@ -65,9 +65,7 @@ public class ScoreScript : MonoBehaviour
 	}
 	
 	void OnGUI ()
-	{
-		GUI.Label(new Rect(0, 0, 100, 100), "" + (long)score);
-		
+	{	
 		//print("Count: "+popups.Count);
 		for(int i = 0; i < popups.Count; i++)
 		{

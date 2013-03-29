@@ -22,6 +22,7 @@ public class Global	 : MonoBehaviour
 		DeathLimit = Death_Limit;
 		LeftLimit = Left_Limit;
 		RightLimit = Right_Limit;
+		GameState = GameState.START_GAME;
 	}
 	
 	void Start()
@@ -55,7 +56,7 @@ public class Global	 : MonoBehaviour
 				GameObject bg = GameObject.Find("Background");
 				bg.GetComponent<Background>().setSpeeds(0.001f);
 				bg.GetComponent<Background>().setColors(Color.yellow,Color.yellow,Color.yellow,Color.yellow);
-				Time.timeScale = 0.75f;
+				Time.timeScale = 0.02f;
 			}
 			break;
 		case GameState.PAUSE:

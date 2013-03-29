@@ -63,7 +63,30 @@ public class HighScoreMenu : MonoBehaviour
 		
 		// only allow player to edit name and add score to high score table when their score is at least as good as the lowest high score
 		if (playerScore > 0.0f) {
-			if (playerScore >= scores[numScores-1]) {
+			
+			if(numScores == 0){
+				yPos += (int) (0.05*yMax);
+				
+				if (!addButtonPressed) {
+					GUI.SetNextControlName("Name Textbox");
+					playerName = GUI.TextField(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 21), playerName, 20);
+					GUI.Label(new Rect(0.5f * xMax, yPos, 0.2f * xMax, 30), playerScore.ToString());
+					
+					// focus on the player name textbox
+					if (GUI.GetNameOfFocusedControl() == string.Empty) {
+	    				GUI.FocusControl("Name Textbox");
+					}
+					
+					yPos += (int) (0.05*yMax);
+					bool addButton = GUI.Button(new Rect(0.1f * xMax, yPos, 0.2f * xMax, 0.035f * yMax), "Add Score");
+					
+					if (addButton || Input.GetKeyUp("enter")) {
+						addButtonPressed = true;
+						addScore();
+					}
+				}
+			}
+			else if (playerScore >= scores[numScores-1]) {
 				yPos += (int) (0.05*yMax);
 				
 				if (!addButtonPressed) {

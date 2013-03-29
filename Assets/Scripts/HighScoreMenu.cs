@@ -63,7 +63,7 @@ public class HighScoreMenu : MonoBehaviour
 		
 		// only allow player to edit name and add score to high score table when their score is at least as good as the lowest high score
 		if (playerScore > 0.0f) {
-			if (scores.Length>numScores && numScores>0 && playerScore >= scores[numScores-1]) {
+			if (playerScore >= scores[numScores-1]) {
 				yPos += (int) (0.05*yMax);
 				
 				if (!addButtonPressed) {

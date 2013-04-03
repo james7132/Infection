@@ -17,7 +17,7 @@ public class Background : MonoBehaviour
 	public Color bgColor3;
 	public Color bgColor4;
 	
-	public Color[] colors = new Color[4];
+	private Color[] colors;
 	
 	public float speed1;
 	public float speed2;

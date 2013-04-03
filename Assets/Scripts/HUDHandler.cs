@@ -17,9 +17,9 @@ public class HUDHandler : MonoBehaviour
 	void Start()
 	{
 		startTime = Time.time;
-		//HUD_time.material.color = drkRed;
-		//HUD_score.material.color = drkRed;
-		//HUD_multi.material.color = drkRed;
+		HUD_time.material.color = drkRed;
+		HUD_score.material.color = drkRed;
+		HUD_multi.material.color = drkRed;
 	}
 
 	void Update()

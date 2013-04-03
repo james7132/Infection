@@ -16,10 +16,6 @@ public class LegitVirusScript : MonoBehaviour {
 	private float slowTimer;
 	private float protectTimer;
 	
-	private Object[] bursts;
-	private float[] burstTimes;
-	private int totalBursts;
-	
 	private ArrayList viruses;
 	public bool makeBabies=true;
 	public float infectionSpeed=1.0f;
@@ -52,10 +48,6 @@ public class LegitVirusScript : MonoBehaviour {
 		slowTimer = 0.0f;
 		hurtTimer = 0.0f;
 		protectTimer = 0.0f;
-		
-		bursts = new Object[1000];
-		burstTimes = new float[1000];
-		totalBursts = 0;
 		
 		goalPosition=transform.position;
 		viruses = new ArrayList();
@@ -204,19 +196,7 @@ public class LegitVirusScript : MonoBehaviour {
 		if (slowTimer > 0.5f) {
 			slowed = false;
 			slowTimer = 0.0f;
-		}
-		
-		
-		for (int i=0; i<totalBursts;++i) {
-			if (burstTimes[i] != null && bursts[i] != null) {	
-				burstTimes[i] += Time.deltaTime;
-				if (burstTimes[i] >= 3.0f) {
-					Destroy(bursts[i]);
-					burstTimes[i] = 0.0f;
-				}
-			}
-		}
-		
+		}		
 	}
 	
 	void MoveAway(){
@@ -245,22 +225,16 @@ public class LegitVirusScript : MonoBehaviour {
 				if(juicySound!=null){
 					juicySound.Play();
 				}
-				if(explosionFab!=null && bursts!=null) {
-					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
-					burstTimes[totalBursts] = 0.0f;
-					++totalBursts;
-					if (totalBursts == 1000) totalBursts = 0;
+				if(explosionFab!=null) {
+					Instantiate(explosionFab, transform.position, transform.rotation);
 				}
 			}
 			
 			//James Added - added helpless condition
 			if((other.tag=="Enemy Dumb" || other.tag=="Enemy Smart" || other.tag=="EnemySmarter") && !helpless){
 				deathSound.Play();
-				if(explosionFab) {
-					bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
-					burstTimes[totalBursts] = 0.0f;
-					++totalBursts;
-					if (totalBursts == 1000) totalBursts = 0;
+				if(explosionFab != null) {
+					Instantiate(explosionFab, transform.position, transform.rotation);
 				}
 				ScoreScript.addScore(1000, true, transform.localPosition);
 				Destroy(other.gameObject);

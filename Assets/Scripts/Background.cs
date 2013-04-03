@@ -17,7 +17,7 @@ public class Background : MonoBehaviour
 	public Color bgColor3;
 	public Color bgColor4;
 	
-	private Color[] colors;
+	public Color[] colors = new Color[4];
 	
 	public float speed1;
 	public float speed2;
@@ -65,7 +65,7 @@ public class Background : MonoBehaviour
 			if(layers[i]!=null){
 				layers[i].renderer.material.SetTextureOffset("_MainTex", uvOffset[i]);
 			}
-			//layers[i].renderer.material.color = colors[i];
+			layers[i].renderer.material.color = colors[i];
 		}
 	}
 	

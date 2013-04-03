@@ -153,6 +153,10 @@ public class LegitVirusScript : MonoBehaviour {
 					
 				}
 			}
+			//If we don't have a target, we are no longer infecting
+			else if(infecting && target==null){
+				infecting=false;
+			}
 			
 		
 		}

@@ -48,11 +48,13 @@ using System.Collections.Generic;
 			totalBursts = 0;
 			viruses = new LegitVirusScript[10];
 			
+			
 			transform.localScale = new Vector3(
 				transform.localScale.x * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation),
 				transform.localScale.y * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation),
 				transform.localScale.z * (1 - maxScaleFlucutation + 2 * Random.value * maxScaleFlucutation)
 			);
+			
 		
 			infectionTimerMax=infectionTimer;
 		}

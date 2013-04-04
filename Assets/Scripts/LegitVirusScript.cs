@@ -161,7 +161,7 @@ public class LegitVirusScript : MonoBehaviour {
 		
 		}
 		else{
-			ScoreScript.addScore(1000, true, transform.localPosition);
+			ScoreScript.addScore(10, true, transform.localPosition);
 			GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera") as GameObject;
 			cam = camObj.GetComponent<Camera>();
 		}
@@ -240,7 +240,7 @@ public class LegitVirusScript : MonoBehaviour {
 				if(explosionFab != null) {
 					Instantiate(explosionFab, transform.position, transform.rotation);
 				}
-				ScoreScript.addScore(1000, true, transform.localPosition);
+				ScoreScript.addScore(100, true, transform.localPosition);
 				Destroy(other.gameObject);
 			}
 		}

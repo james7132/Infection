@@ -17,9 +17,1077 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Input initialized.
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 291.
-Total: 1.030503 ms (FindLiveObjects: 0.017727 ms CreateObjectMapping: 0.019593 ms MarkObjects: 0.162342 ms  DeleteObjects: 0.024258 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 123.
+Total: 1.277755 ms (FindLiveObjects: 0.013995 ms CreateObjectMapping: 0.049449 ms MarkObjects: 0.125956 ms  DeleteObjects: 0.052714 ms)
 
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 1.241834 ms (FindLiveObjects: 0.011196 ms CreateObjectMapping: 0.011662 ms MarkObjects: 0.129221 ms  DeleteObjects: 0.017260 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 123.
+Total: 1.219908 ms (FindLiveObjects: 0.008397 ms CreateObjectMapping: 0.008863 ms MarkObjects: 0.118492 ms  DeleteObjects: 0.052714 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 1.136870 ms (FindLiveObjects: 0.010263 ms CreateObjectMapping: 0.009330 ms MarkObjects: 0.143216 ms  DeleteObjects: 0.016327 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 287.
+Total: 1.224107 ms (FindLiveObjects: 0.015394 ms CreateObjectMapping: 0.013062 ms MarkObjects: 0.179604 ms  DeleteObjects: 0.030322 ms)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 62)
+
 Look rotation viewing vector is zero
  
 (Filename:  Line: 62)
@@ -468,815 +1536,717 @@ Look rotation viewing vector is zero
  
 (Filename:  Line: 62)
 
-Smarter
+0
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Smart
+Dumb Max: 0.0102734
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Smarter
+Smart Max: 0
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Dumb
+Smarter Max: 0
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Dumb
+[ 0.00140175 Dumb ]
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Smarter
+spawnTimerMax = 2.94
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Smart
+1
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Dumb
+spawnTimerMax = 2.94
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Smarter
+0
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
+Dumb Max: 0.1967972
  
-(Filename:  Line: 62)
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
+Smart Max: 0
  
-(Filename:  Line: 62)
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Look rotation viewing vector is zero
+Smarter Max: 0
  
-(Filename:  Line: 62)
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Can not play a disabled audio source
+[ 0.1511679 Dumb ]
  
-(Filename:  Line: 359)
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+spawnTimerMax = 2.8812
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 235.
-Total: 2.029284 ms (FindLiveObjects: 0.016327 ms CreateObjectMapping: 0.106828 ms MarkObjects: 0.196397 ms  DeleteObjects: 0.899882 ms)
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.8812
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 0.6808887
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.3449746 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.823576
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.823576
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 1.580146
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.3302204 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.767105
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.767105
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 2.369812
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.753961 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.711763
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 2.57639
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.4071224 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.657527
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
 3
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 242.
-Total: 1.051962 ms (FindLiveObjects: 0.013062 ms CreateObjectMapping: 0.008863 ms MarkObjects: 0.184734 ms  DeleteObjects: 0.029389 ms)
-
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 296.
-Total: 1.045431 ms (FindLiveObjects: 0.013995 ms CreateObjectMapping: 0.011196 ms MarkObjects: 0.202928 ms  DeleteObjects: 0.024724 ms)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 62)
-
-Dumb
+Dumb Max: 3.391194
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
-Smart
+Smart Max: 0
  
 (Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
 
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 1.400493 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.604377
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.604377
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.604377
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 359)
+
+0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 4.708097
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 4.523129 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.552289
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 4.867495
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.6404336 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.501244
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 359)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 5.444304
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 3.199329 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.451219
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 5.735727
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 2.096751 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.402195
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 5.954609
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 1.548502 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.354151
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 6.618069
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 2.436392 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.307068
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+3
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 7.226721
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.03643861
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 3.659431 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.260926
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 7.6656
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.147411
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.3543942 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.215708
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.051871
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.3312295
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 2.52786 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.171394
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.378545
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.5845776
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 5.884145 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.127966
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+3
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.611926
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.8608292
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 4.389297 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.085407
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+3
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.673033
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 0.9551113
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 1.080675 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.043699
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+3
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.796834
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 1.19382
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 5.7767 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 2.002825
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.920341
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 1.5598
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 1.704992 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.962768
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.981395
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 1.905292
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 0.6131545 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.923513
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+1
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.989222
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 2.524958
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 10.65595 Smart ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.885042
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+2
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.967922
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 2.730527
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 9.203037 Smart ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.847342
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+3
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.946814
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 2.873991
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 3.728852 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.810395
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+4
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.944742
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 2.88648
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 6.092261 Dumb ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.774187
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+5
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Dumb Max: 8.942733
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smart Max: 2.898387
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Smarter Max: 0
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+[ 10.26568 Smart ]
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+spawnTimerMax = 1.738703
+ 
+(Filename: C:/BuildAgent/work/7535de4ca26c26ac/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 446 unused Assets to reduce memory usage. Loaded Objects now: 237.
+Total: 4.481240 ms (FindLiveObjects: 0.027990 ms CreateObjectMapping: 0.055514 ms MarkObjects: 0.292031 ms  DeleteObjects: 3.044873 ms)
+
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 94 unused Assets to reduce memory usage. Loaded Objects now: 236.
-Total: 1.362186 ms (FindLiveObjects: 0.013528 ms CreateObjectMapping: 0.017260 ms MarkObjects: 0.204327 ms  DeleteObjects: 0.323752 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 247.
+Total: 1.334668 ms (FindLiveObjects: 0.015394 ms CreateObjectMapping: 0.011662 ms MarkObjects: 0.270105 ms  DeleteObjects: 0.033121 ms)
 
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 245.
-Total: 1.015108 ms (FindLiveObjects: 0.013995 ms CreateObjectMapping: 0.009796 ms MarkObjects: 0.192198 ms  DeleteObjects: 0.027523 ms)
-
-Initialize engine version: 4.1.0f4 (88f3bc4c76f9)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [igdumd64.dll 9.17.10.2867]
-    Renderer: Intel(R) HD Graphics 3000
-    Vendor:   Intel
-    VRAM:     880 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\James\Documents\GitHub\Infection\Builds\Windows\Infection_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\James\Documents\GitHub\Infection\Builds\Windows\Infection_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\James\Documents\GitHub\Infection\Builds\Windows\Infection_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\James\Documents\GitHub\Infection\Builds\Windows\Infection_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.060 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Skipped rendering frame because GfxDevice is in invalid state (device lost)
- 
-(Filename:  Line: 1385)
-
-HandleD3DDeviceLost
-  HandleD3DDeviceLost: needs reset, doing it
-FullResetD3DDevice
-ResetD3DDevice
-dev->Reset
-D3Dwindow device not lost anymore

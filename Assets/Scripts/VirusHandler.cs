@@ -20,26 +20,6 @@ namespace AssemblyCSharp
 			
 		}
 		
-		
-		
-		public static void selectSingleVirus(GameObject virus)
-		{
-			if(virus.tag != "Virus")
-			{
-				return;
-			}
-			else
-			{
-				//selectedViruses.Clear();
-				//selectedViruses.Add(virus);
-				GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
-				foreach(GameObject virusCheck in viruses)
-				{
-					virusCheck.GetComponent<VirusScript>().Selected = ((virusCheck == virus) ? true : false);
-				}
-			}
-		}
-		
 		// Update is called once per frame
 		void Update () 
 		{	
@@ -52,12 +32,6 @@ namespace AssemblyCSharp
 					selectionRect.yMin = startLoc.y;
 					selectionRect.xMax = startLoc.x; 
 					selectionRect.yMax = startLoc.y;
-					//selectedViruses.Clear();
-					GameObject[] viruses = GameObject.FindGameObjectsWithTag("Virus");
-					foreach(GameObject v in viruses)
-					{
-						v.GetComponent<VirusScript>().Selected = false;
-					}
 					selecting = true;
 				}
 				else if(Input.GetMouseButton(0)) //Left Button held down, update GUI

@@ -17,7 +17,7 @@ public class CreditsScript : MonoBehaviour {
 	{
 		int x = Screen.width;
 		int y = Screen.height;
-		if(GUI.Button(new Rect(0.15f * x, 0.85f * y, 0.45f * x, 0.05f * y), "Return to Main Menu"))
+		if(GUI.Button(new Rect(0.35f * x, 0.85f * y, 0.3f * x, 0.05f * y), "Return to Main Menu"))
 		{
 			Application.LoadLevel("MainMenu");
 		}

@@ -4,7 +4,7 @@ using System.Collections;
 public class MainMenu : MonoBehaviour 
 {
 	private readonly Rect[] buttonRects;
-	private readonly string[] buttonName = {"Start Game", "Instructions", "Credits", "Highscores"};
+	private readonly string[] buttonName = {"Start Game", "Instructions", "Credits" , "Highscores"};
 	private const float buttonWidth = 0.15f;
 	private const float buttonSpacing = 0.025f;
 	public GUITexture logoItem;
@@ -49,6 +49,9 @@ public class MainMenu : MonoBehaviour
 					break;
 				case "Credits":
 					Application.LoadLevel("Credits");
+					break;
+				case "Instructions":
+					Application.LoadLevel("Instructions");
 					break;
 				default:
 					goto case "Start Game";

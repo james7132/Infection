@@ -30,6 +30,8 @@ using System.Collections.Generic;
 		private int totalBursts;
 		public GameObject explosionFab;
 	
+		
+	
 		public bool Infected
 		{
 			get { return infected; }
@@ -84,6 +86,22 @@ using System.Collections.Generic;
 			
 			nextIndex = fixVirusArray();
 			
+			//Cheap way to avoid giant red blood cell
+			if(transform.localScale.magnitude>100){
+				if(viruses[0]!=null){
+					Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
+					if(explosionFab) {
+						bursts[totalBursts] = Instantiate(explosionFab, transform.position, transform.rotation);
+						burstTimes[totalBursts] = 0.0f;
+						++totalBursts;
+						if (totalBursts == 1000) totalBursts = 0;
+					}
+					
+				}
+				Destroy(gameObject);
+			}
+		
+		
 			//If there's no viruses, we're no longer infected
 			if(nextIndex==0)
 			{

@@ -10,7 +10,7 @@ namespace AssemblyCSharp
 		private const int initialSpawnNumber = 10;
 		private const float spawnThreshold = 0.3f;
 		public float spawnTimer = 0;
-		public float spawnTimerResetMin = 0.2f;
+		private float spawnTimerResetMin = 0.2f;
 		private float spawnTimerReset = 1.0f;
 		private float score;
 		
@@ -29,7 +29,7 @@ namespace AssemblyCSharp
 		void Update () 
 		{
 			score = ScoreScript.getScore();
-			spawnTimerReset = Mathf.Lerp(spawnTimerReset, spawnTimerResetMin, Time.deltaTime/score*20);
+			spawnTimerReset = Mathf.Lerp(spawnTimerReset, spawnTimerResetMin, Time.deltaTime/score*10);
 			print("spawntimerreset: " + spawnTimerReset);
 			if (spawnTimer < spawnTimerReset) 
 			{

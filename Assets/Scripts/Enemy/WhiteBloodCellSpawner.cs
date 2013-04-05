@@ -12,9 +12,9 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 	public float dumbMax = 0;
 	public float smartMax = 0;
 	public float smarterMax = 0;
-	public float totalNum = 4;
+	public float totalNum = 5;
 	public static float totalNumMax = 10;
-	public float scorePeriod = 30000.0f;
+	public float scorePeriod = 12500.0f;
 	public static float scorePeriodMin = 20000.0f;
 	public float difficultyPeriod;
 	public float enemySpeed = 10.0f;
@@ -29,14 +29,14 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 		difficultyPeriod = score/scorePeriod*2*Mathf.PI;
 		
 		// scale number of maximum number of enemies allowed on the screen
-		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score*1.5f);
+		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score*2);
 		//print (totalNum);
 		
 		// scale enemy speed with player score
 		enemySpeed = Mathf.Lerp(enemySpeed, enemySpeedMax, Time.deltaTime/score);
 		
 		// spawn dumb white blood cells with increasing probability
-		dumbMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod)*totalNum/2.0f;
+		dumbMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod)*totalNum/2.0f + 1;
 		// spawn smart white blood cells with increasing probability after dumb white blood cell spawn probability peaks
 		if (difficultyPeriod > 2.0f/3.0f*Mathf.PI) 	smartMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod - 2.0f/3.0f*Mathf.PI)*totalNum/2.0f;
 		// spawn smarter white blood cells with increasing probability after rising smart white blood cell spawn probability has passed inflection point
@@ -53,7 +53,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 				//print ("Smart Max: " + smartMax);
 				//print ("Smarter Max: " + smarterMax);
 				spawnCell(getCellType(), getSpawnSide());
-				spawnTimerMax *= 0.98f;
+				spawnTimerMax *= 0.92f;
 			}
 			spawnTimer = spawnTimerMax;
 			// reduce the spawn wait by 0.2% each time an enemy is spawned;

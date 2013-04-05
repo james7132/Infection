@@ -29,7 +29,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 		difficultyPeriod = score/scorePeriod*2*Mathf.PI;
 		
 		// scale number of maximum number of enemies allowed on the screen
-		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score*2);
+		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score);
 		//print (totalNum);
 		
 		// scale enemy speed with player score

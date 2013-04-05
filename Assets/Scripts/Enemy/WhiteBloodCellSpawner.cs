@@ -14,7 +14,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 	public float smarterMax = 0;
 	public float totalNum = 5;
 	public static float totalNumMax = 10;
-	public float scorePeriod = 40000.0f;
+	public float scorePeriod = 25000.0f;
 	public static float scorePeriodMin = 20000.0f;
 	public float difficultyPeriod;
 	public float enemySpeed = 10.0f;

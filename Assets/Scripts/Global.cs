@@ -5,7 +5,6 @@ public class Global	 : MonoBehaviour
 	private static Global instance;
 	public static GameState GameState = GameState.START_GAME;
 	public double virusCountToScoreRatio = 100;
-	public double playerScore;
 	public int Upper_Limit = 360;
 	public int Death_Limit = -400;
 	public int Left_Limit = 475;
@@ -28,7 +27,6 @@ public class Global	 : MonoBehaviour
 	void Start()
 	{
 		instance = this;
-		playerScore = 0;
 	}
 	
 	void Update()

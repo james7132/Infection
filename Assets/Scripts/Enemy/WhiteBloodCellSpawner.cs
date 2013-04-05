@@ -36,7 +36,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 		enemySpeed = Mathf.Lerp(enemySpeed, enemySpeedMax, Time.deltaTime/score);
 		
 		// spawn dumb white blood cells with increasing probability
-		dumbMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod)*totalNum/2.0f;
+		dumbMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod)*totalNum/2.0f + 1;
 		// spawn smart white blood cells with increasing probability after dumb white blood cell spawn probability peaks
 		if (difficultyPeriod > 2.0f/3.0f*Mathf.PI) 	smartMax = totalNum/2.0f - Mathf.Cos(difficultyPeriod - 2.0f/3.0f*Mathf.PI)*totalNum/2.0f;
 		// spawn smarter white blood cells with increasing probability after rising smart white blood cell spawn probability has passed inflection point

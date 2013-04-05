@@ -12,9 +12,9 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 	public float dumbMax = 0;
 	public float smartMax = 0;
 	public float smarterMax = 0;
-	public float totalNum = 5;
+	public float totalNum = 4;
 	public static float totalNumMax = 10;
-	public float scorePeriod = 25000.0f;
+	public float scorePeriod = 30000.0f;
 	public static float scorePeriodMin = 20000.0f;
 	public float difficultyPeriod;
 	public float enemySpeed = 10.0f;
@@ -29,7 +29,7 @@ public class WhiteBloodCellSpawner : MonoBehaviour {
 		difficultyPeriod = score/scorePeriod*2*Mathf.PI;
 		
 		// scale number of maximum number of enemies allowed on the screen
-		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score*2);
+		totalNum = Mathf.Lerp(totalNum, totalNumMax, Time.deltaTime/score*1.5f);
 		//print (totalNum);
 		
 		// scale enemy speed with player score

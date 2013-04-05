@@ -650,3 +650,13 @@ Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty seri
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 247.
 Total: 2.110465 ms (FindLiveObjects: 0.022858 ms CreateObjectMapping: 0.020992 ms MarkObjects: 0.387198 ms  DeleteObjects: 0.051315 ms)
 
+Skipped rendering frame because GfxDevice is in invalid state (device lost)
+ 
+(Filename:  Line: 1385)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore

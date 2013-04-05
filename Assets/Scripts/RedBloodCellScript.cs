@@ -87,7 +87,7 @@ using System.Collections.Generic;
 			nextIndex = fixVirusArray();
 			
 			//Cheap way to avoid giant red blood cell
-			if(transform.localScale.magnitude>100){
+			if (transform.localScale.magnitude > 20){
 				if(viruses[0]!=null){
 					Instantiate(viruses[0].gameObject,viruses[0].transform.position,viruses[0].transform.rotation);
 					if(explosionFab) {

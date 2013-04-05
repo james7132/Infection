@@ -4,10 +4,10 @@ using System.Collections;
 public class LegitVirusScript : MonoBehaviour {
 	Camera cam;
 	public Vector3 goalPosition;
-	public float speed = 160.0f;
+	public float speed = 120.0f;
 	
 	//James added
-	private float baseSpeed = 160.0f;
+	private float baseSpeed = 120.0f;
 	private bool slowed;
 	private bool helpless;
 	private bool poisoned;

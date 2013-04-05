@@ -5,10 +5,10 @@ public class Global	 : MonoBehaviour
 	private static Global instance;
 	public static GameState GameState = GameState.START_GAME;
 	public double virusCountToScoreRatio = 100;
-	public int Upper_Limit = 360;
-	public int Death_Limit = -400;
-	public int Left_Limit = 475;
-	public int Right_Limit = -475;
+	public int Upper_Limit = 475;
+	public int Death_Limit = -475;
+	public int Left_Limit = 560;
+	public int Right_Limit = -560;
 	public static int UpperLimit;
 	public static int DeathLimit;
 	public static int LeftLimit;

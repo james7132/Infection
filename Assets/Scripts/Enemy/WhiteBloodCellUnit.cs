@@ -4,7 +4,7 @@ using System.Collections;
 //To be used in a WhiteBloodCellController
 public class WhiteBloodCellUnit : MonoBehaviour {
 	//This can be modified to increase difficulty
-	public float speed = 25.0f;
+	public float speed;
 	//For Shooting, should be a prefab
 	public GameObject projectile;
 	public float fireTimer;
@@ -140,6 +140,11 @@ public class WhiteBloodCellUnit : MonoBehaviour {
 			
 		}
 		
+	}
+	
+	public void setSpeed(float newSpeed) {
+		speed = newSpeed;
+		print (speed);
 	}
 	
 	public void setType(string enemyType) {

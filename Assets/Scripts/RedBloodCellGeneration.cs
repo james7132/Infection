@@ -7,10 +7,12 @@ namespace AssemblyCSharp
 	{	
 		public GameObject prefab;
 		private static GameObject bloodCell;
-		private const int initialSpawnNumber = 30;
+		private const int initialSpawnNumber = 10;
 		private const float spawnThreshold = 0.3f;
 		public float spawnTimer = 0;
-		private float spawnTimerMax = 0.25f;
+		public float spawnTimerResetMin = 0.2f;
+		private float spawnTimerReset = 1.0f;
+		private float score;
 		
 		// Use this for initialization
 		void Start () 
@@ -26,7 +28,10 @@ namespace AssemblyCSharp
 		// Update is called once per frame
 		void Update () 
 		{
-			if (spawnTimer < spawnTimerMax) 
+			score = ScoreScript.getScore();
+			spawnTimerReset = Mathf.Lerp(spawnTimerReset, spawnTimerResetMin, Time.deltaTime/score*8);
+//			print("spawntimerreset: " + spawnTimerReset);
+			if (spawnTimer < spawnTimerReset) 
 			{
 				spawnTimer += Time.deltaTime;
 			} 

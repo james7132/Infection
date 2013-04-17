@@ -38,6 +38,9 @@ public class LegitVirusScript : MonoBehaviour {
 	Vector3 curVector;
 	
 	
+	//Whether or not we've set the shaders to be transparent
+	private bool shadersSet;
+	
 	void Start(){
 		//James added
 		//baseSpeed = speed;
@@ -78,24 +81,49 @@ public class LegitVirusScript : MonoBehaviour {
 		}
 		
 		//COLOR DECISION
-		if(!selected)
+		if(!selected)//Not selected, go transparent
 		{
-			Color lightYellow = new Color(1.0f,(241.0f/255.0f),(135.0f/255.0f),1.0f);
+			//Color lightYellow = new Color(1.0f,(241.0f/255.0f),(135.0f/255.0f),0.1f);
 			
-			if(renderer!=null && !renderer.material.color.Equals(lightYellow))
+			if(renderer!=null )
 			{
-				renderer.material.color = Color.Lerp(renderer.material.color, lightYellow,Time.deltaTime*20);
+				for(int i = 0; i<renderer.materials.Length; i++){
+					Color transparentColor  = renderer.materials[i].color;
+					transparentColor.a = 0.5f;
+					if(!renderer.materials[i].color.Equals(transparentColor)){
+						
+						renderer.materials[i].shader = Shader.Find("Transparent/Diffuse");
+							
+						
+							
+						//print("Moving to transparent");
+						renderer.materials[i].color = Color.Lerp(renderer.materials[i].color, transparentColor,Time.deltaTime*20);
+					
+						print("Color "+ i+": "+renderer.materials[i].color);
+					}
+					
+				}
 			}
 			
 		}
 		else
 		{
-			Color yellow = new Color(1.0f,1.0f,0.0f,1.0f);
-			
-			if(renderer!=null && !renderer.material.color.Equals(yellow))
-			{
-				renderer.material.color = Color.Lerp(renderer.material.color, yellow,Time.deltaTime*20);
-			}
+			for(int i = 0; i<renderer.materials.Length; i++){
+					Color opaqueColor  = renderer.materials[i].color;
+					opaqueColor.a = 1.0f;
+					if(!renderer.materials[i].color.Equals(opaqueColor)){
+						
+						
+							
+						//print("Moving to transparent");
+						renderer.materials[i].color = Color.Lerp(renderer.materials[i].color, opaqueColor,Time.deltaTime*40);
+					
+						print("Color "+ i+": "+renderer.materials[i].color);
+					}
+					else{
+						renderer.materials[i].shader = Shader.Find("Diffuse");
+					}
+				}
 		}
 		
 		

@@ -30,7 +30,7 @@ namespace AssemblyCSharp
 		{
 			score = ScoreScript.getScore();
 			spawnTimerReset = Mathf.Lerp(spawnTimerReset, spawnTimerResetMin, Time.deltaTime/score*10);
-			print("spawntimerreset: " + spawnTimerReset);
+			//print("spawntimerreset: " + spawnTimerReset);
 			if (spawnTimer < spawnTimerReset) 
 			{
 				spawnTimer += Time.deltaTime;

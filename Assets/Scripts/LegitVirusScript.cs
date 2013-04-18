@@ -34,6 +34,9 @@ public class LegitVirusScript : MonoBehaviour {
 	
 	public bool selected=true;
 	
+	
+	
+	
 	//The current Rotation Vector
 	Vector3 curVector;
 	
@@ -89,7 +92,7 @@ public class LegitVirusScript : MonoBehaviour {
 			{
 				for(int i = 0; i<renderer.materials.Length; i++){
 					Color transparentColor  = renderer.materials[i].color;
-					transparentColor.a = 0.5f;
+					transparentColor.a = 0.7f;
 					if(!renderer.materials[i].color.Equals(transparentColor)){
 						
 						renderer.materials[i].shader = Shader.Find("Transparent/Diffuse");
@@ -99,7 +102,7 @@ public class LegitVirusScript : MonoBehaviour {
 						//print("Moving to transparent");
 						renderer.materials[i].color = Color.Lerp(renderer.materials[i].color, transparentColor,Time.deltaTime*20);
 					
-						print("Color "+ i+": "+renderer.materials[i].color);
+					
 					}
 					
 				}
@@ -116,9 +119,9 @@ public class LegitVirusScript : MonoBehaviour {
 						
 							
 						//print("Moving to transparent");
-						renderer.materials[i].color = Color.Lerp(renderer.materials[i].color, opaqueColor,Time.deltaTime*40);
+						renderer.materials[i].color = Color.Lerp(renderer.materials[i].color, opaqueColor,Time.deltaTime*50);
 					
-						print("Color "+ i+": "+renderer.materials[i].color);
+						
 					}
 					else{
 						renderer.materials[i].shader = Shader.Find("Diffuse");
